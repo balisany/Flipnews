@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+/*  @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);*/
+
+	body{
+		font-family: 'Droid Arabic Naskh', serif;
+		color: rgb(76, 76, 76);
+		direction: rtl;
+		background: no-repeat url(../src/bg.png) 0 0;
+		background-color: rgb(245,246,245);
+		background-repeat: repeat;
+		padding: 1% 1%; 
+	}
+
+     #results{ 
+	      max-width: 80%;; 
+/*	      height:80%; */
+/*	      overflow: auto; */
+      }  
+
+     #linksrc{
+     	font-size: 1.0em;
+     	color: #3399FF;
+     	letter-spacing: .1em;
+     	text-decoration: none;
+     	line-height: 1.7em;
+     	padding: 5px 0;
+     	
+     	text-shadow: 1px 1px 1px #ccc;
+     }
+     
+     p{
+     	vertical-align: text-top;
+     	font-size: 1.1em;
+     	letter-spacing: .11em;
+     	text-decoration: none;
+     	display: block;
+     	line-height: 1.9em;
+     	text-shadow: 1px 1px #fff;
+     }
+     p > br
+     {
+     	margin: 5px;
+     }
+     
+     h1{
+     	vertical-align: text-top;
+     	font-size: 1.6em;
+     	text-shadow: 1px 1px #fff;
+     } 		
+
+	  img
+	   {
+	    float: right;
+	   	border: none;
+	   	vertical-align: middle;
+	   	max-width: 35%;
+	   	border: 5px solid #fff;
+	   	-webkit-border-radius: 2px;
+	   	margin-left: 10px;
+	   
+	   } 
+	   #date{
+			font-size:.8em;
+	 	 }
+	 #slides img
+	 {
+	 	max-height: 20%;
+	 	margin: 2px;
+	 }

@@ -5,11 +5,12 @@
        
   
   <style type='text/css'>    
-  @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
-  @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
   @import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
-  @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+/*  @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
   @import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);*/
+
 
 
      #results{ 

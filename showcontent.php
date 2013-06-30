@@ -6,7 +6,6 @@
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/contentstyle.css" rel="stylesheet">
-    <link href="generic.css" rel="stylesheet" type="text/css" />
     
     <script src="http://code.jquery.com/jquery-latest.min.js"
             type="text/javascript"></script>
@@ -54,12 +53,12 @@
                    		if (paras.hasOwnProperty('p')) {
                    		$.each(paras.p, function(i,nr){
                    			if(nr.hasOwnProperty('content')){
-                   				if(nr.content !='[object Object]'){
+                   				if(nr.content !='text-align: right;'){
                    					stories += nr.content + "<br />";
                    				}		
                    			}
                    			else{
-                   				if(nr !='[object Object]'){
+                   				if(nr !='[object Object]' || nr !='text-align: right;' || nr !=','){
                    				stories += nr+ "<br />";
                    				}
                    			}

@@ -11,7 +11,8 @@
 		background: no-repeat url(../src/bg.png) 0 0;
 		background-color: rgb(245,246,245);
 		background-repeat: repeat;
-		padding: 1% 1%; 
+		padding: 1% 1%;
+		margin: 0;
 	}
 
      #results{ 
@@ -39,6 +40,7 @@
      	display: block;
      	line-height: 1.9em;
      	text-shadow: 1px 1px #fff;
+     	margin: 0;
      }
      p > br
      {
@@ -56,8 +58,8 @@
 	    float: right;
 	   	border: none;
 	   	vertical-align: middle;
-	   	max-width: 35%;
-	   	border: 5px solid #fff;
+	   	max-width: 50%;
+	    border: 5px solid #fff;
 	   	-webkit-border-radius: 2px;
 	   	margin-left: 10px;
 	   

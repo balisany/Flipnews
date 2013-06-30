@@ -134,7 +134,7 @@
                  if(response.query.results){  
                    var paras = response.query.results.div;  
                    paras.forEach(function(node,index) {  
-                   		stories +="<li>	<form method='post' action='showcontent.php'>";
+                   		stories +="<li>	<form method='post' action='demo.php'>";
                    		stories += "<input type='hidden' name='link' value='" + urlpath + node.font.a.href + "'>";
                    		stories +="<img  src='"+ urlpath+node.font.img.src+"'/>";
                    		stories += "<button type='submit' name='lvinpress'>";
@@ -171,7 +171,7 @@
                    var paras = response.query.results.div;  
                    paras.forEach(function(node,index) {  
                    		
-                   		stories +="<li>	<form method='post' action='showcontent.php'>";
+                   		stories +="<li>	<form method='post' action='demo.php'>";
                    		stories += "<input type='hidden' name='link' value='" + urlpath + node.a.href + "'>";
                    		stories +="<img  src='"+ urlpath+node.img.src+"'/>";
                    		stories += "<button type='submit' name='nrttv'>";

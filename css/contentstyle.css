@@ -15,8 +15,10 @@
 		margin: 0;
 	}
 
-     #results{ 
-	      max-width: 80%;; 
+     #result{ 
+			
+	      margin: 10px auto;
+	      padding: 0px 10px 50px 10px;
 /*	      height:80%; */
 /*	      overflow: auto; */
       }  
@@ -38,9 +40,11 @@
      	letter-spacing: .11em;
      	text-decoration: none;
      	display: block;
-     	line-height: 1.9em;
+     	line-height: 2.2em;
      	text-shadow: 1px 1px #fff;
      	margin: 0;
+     	alignment-baseline: baseline;
+     	width: 60%;
      }
      p > br
      {
@@ -49,21 +53,25 @@
      
      h1{
      	vertical-align: text-top;
-     	font-size: 1.6em;
+     	font-size: 1.4em;
      	text-shadow: 1px 1px #fff;
      } 		
 
-	  img
+	  img,iframe
 	   {
 	    float: right;
 	   	border: none;
 	   	vertical-align: middle;
-	   	max-width: 50%;
+	   	max-width: 400px;
+	   	width: 70%;
 	    border: 5px solid #fff;
 	   	-webkit-border-radius: 2px;
 	   	margin-left: 10px;
 	   
 	   } 
+	   
+	 
+	   
 	   #date{
 			font-size:.8em;
 	 	 }

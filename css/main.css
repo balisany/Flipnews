@@ -1,0 +1,117 @@
+#results{ 
+	     width: 45%; 
+	     margin-left: 2%; 
+	     border: 1px solid gray; 
+	     padding: 5px; 
+	     height:350px; 
+	     overflow: auto; 
+	     float: left;
+	     margin-right: 15px;
+   }  
+   
+
+     #results2, #results3{ 
+	     width: 45%; 
+	     margin-left: 2%; 
+	     border: 1px solid gray; 
+	     padding: 5px; 
+	      height:350px; 
+	     overflow: auto;
+	     margin-bottom: 10px;
+     } 
+     
+     
+   #toppanel
+   {
+   		width: 100%;
+   		height: 30px;
+		background-color: #dfdfdf;
+	}
+   
+    #toppanel select
+    {
+    	width: 50px;
+    	margin: 5px 10px;
+    }
+	
+	 #toppanel input
+	 {
+	 	
+	 	width: 50px;
+	 
+	}   
+
+   
+   ul
+   {
+   	float: right;
+   	 direction: rtl;
+   	 clear: both;
+   	 list-style-type: none;
+		background-image: url('background.png');
+	}
+   
+   ul li
+   {
+   	margin-bottom: 20px;	
+   }
+   
+   button
+   {
+   	background: none;
+   	border: none;
+   	
+   }
+   
+   button >span
+   {
+   cursor: pointer;
+   width: 400px;
+   text-align: right;
+   vertical-align: text-top;
+   font-size: 1.5em;
+   color: #666;
+   font-family: 'Droid Arabic Naskh', serif;
+   letter-spacing: .1em;
+   word-wrap: 1.1em;
+   text-decoration: none;
+   display: block;
+   line-height: 1.7em;
+   } 		
+   
+     #results2 > div
+     {
+     text-align: right;
+     vertical-align: text-top;
+     font-size: .9em;
+     color: #666;
+     font-family: 'Droid Arabic Naskh', serif;
+     letter-spacing: .1em;
+     word-wrap: 1.1em;
+     line-height: 1.7em;
+     	
+     }
+	
+	 ul li a:hover
+	  {
+	  	color: blue;   	
+	  }
+	     
+	   img
+	   {
+	    float: right;
+	   	border: none;
+	   	padding-left: 20px;
+	   	padding-right: 2px;
+	   	vertical-align: middle;
+	   	width: 80px;
+	   	max-height: 50px;
+	   } 
+	   
+	  /* #date
+	   {
+			font-size:.8em;
+	 		color: red;
+	 		
+	 	}*/
+	 	

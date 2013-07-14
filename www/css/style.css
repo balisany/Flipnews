@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: 400;
+  src: url(HelveticaNeue.otf) format('truetype');
+}
+body{
+	font-family:'HelveticaNeue',Arial;
+	-webkit-user-select: none;  
+	  -moz-user-select: none;    
+	  -ms-user-select: none;      
+	  user-select: none;
+}
+
+
+
+input[type=text]
+{
+	height: 50px;
+	width: 238px;
+	border: .08em solid rgb(125,125,125);
+	font-size: 1.5em;
+	font-family:'HelveticaNeue',Arial;
+	padding: 0 10px;
+	letter-spacing: 1px;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+#cat-creation
+{
+	margin-top: 80px;
+	
+}
+	
+#icon-add
+{
+	background: url(../src/add.png);
+	width: 48px;
+	display: block;
+	height: 48px;
+	float: right;
+	border: .08em solid rgb(125,125,125);
+	margin-right: 33px;
+	margin-top: -50px;
+}
+
+#felt-rad{
+	margin-left: 40px;
+}
+
+button#new
+{
+	width: 250px;
+	height: 40px;
+	border: 2px solid rgb(125,125,125);
+	margin-left: 10%;
+	background: rgb(127,210,244);
+}
+
+ul#cats
+{
+	list-style: none;
+	width: 80%;
+}
+
+ul#cats >  li
+{
+	border: .1em solid #333;
+	margin-bottom: -1px;
+	background: url(../src/arrow.png) no-repeat;
+	background-position-x: 254px;
+	background-position-y: 22px;
+}
+ul#cats >  li > button
+{
+	background: none;
+	border: none;
+	padding: 20px 0px 20px 10px;
+	font-size: 1.5em;
+	letter-spacing: .1em;
+	font-family:'HelveticaNeue',Arial;
+}
+ul#cats >  li:active
+{
+	background-color: rgb(182, 206, 240);
+}
+
+ul#cats > li > i
+{
+	float: right;
+	margin-right:10px;
+	width: 24px;
+	height: 24px;
+	background: url(../src/arrow.png);
+} 
+
+#edit{
+	float: right;
+	padding: 10px 20px;
+	background: #eee;
+	margin: 5px 5px 20px 5px;
+	border: 1px solid #333;
+}
+span.delcat{
+	background: rgb(248, 151, 151);
+	width: 70px;
+	text-align: center;
+	height: 67px;
+	display: block;
+	float: left;
+	line-height: 4;
+	letter-spacing: 3px;
+	padding-top: 5px;
+}
+
+

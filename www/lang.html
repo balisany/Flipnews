@@ -1,0 +1,214 @@
+<html>
+
+<head>
+	<link href="css/style.css" rel="stylesheet">  
+	<script src="js/json2.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jstorage.js"></script>
+	<!--<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
+	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.slide.js"></script>-->
+	
+	
+	
+<style>
+
+
+	#main{
+		width: 360px;
+		min-height: 400px;
+		border: 1px solid #eee;
+		margin: auto;
+	}
+		
+</style>
+
+</head>
+    <body cz-shortcut-listen="true">
+        <div id="main">
+        	<span id="back"> &lt; back</span>
+        <div id="cat-creation">
+   
+        	  <span id="count"></span>
+        	  <span id="b"></span>
+        
+        	<ul id="langs">
+        		<li class="item" id="kurdi">Kurdi</li>
+        		<li class="item" id="arabic">Arabic</li>
+             	<li class="item" id="turkish">Turkish</li>
+             	<li class="item" id="farsi">Farsi</li>
+        	</ul >
+        	
+        	
+        	<ul id="kurdi">
+        		<li class="items" id="Hawlati"> Hawlati </li>
+        		<li class="items" id="Awene">Awene</li>
+        		<li class="items" id="Rudaw">Rudaw</li>
+        	</ul>
+        	
+        	<ul id="arabic">
+        		<li class="items" id="khabar">Al khabar </li>
+        		<li class="items" id="zaman">Zaman</li>
+        		<li class="items" id="arabia">Al arabiya</li>
+        	</ul>
+        	
+        	<ul id="turkish">
+        		<li class="items" id="cnn">CNN </li>
+        		<li class="items" id="huriet">Huriet</li>
+        		<li class="items" id="haber">Habar</li>
+        	</ul>
+        	
+        	<ul id="farsi">
+        			<li class="items" id="azadi">Azadi </li>
+        			<li class="items" id="irani">Irani</li>
+        			<li class="items" id="tehran">Tehran</li>
+        	</ul>
+        		
+        		
+		
+        </div>
+	</div>
+	
+    </body>
+    <script>
+    	// history.go(-1);
+  
+    	$(function(){
+    	var str = $.jStorage.get("kurdi"); 
+		var arr = str.split(' ');
+		
+    	    $("li").click(function() {
+    	  		var id = $(this).attr('id'); 
+    	  		var defval = $.jStorage.get("kurdi");	
+    	  		$(arr).each(function() {
+					if(this != id)
+					{	
+						//var val = $(this).attr('id');
+						//$.jStorage.set("kurdi",this+" ");
+							//newval.push(this+" ");
+					}
+				});
+				//var str = $.jStorage.get("kurdi"); 
+//				var arr2 = newval.split(",");
+//				var defval = $.jStorage.get("kurdi");
+//				$(arr2).each(function() {
+//					$.jStorage.set("kurdi",defval+" "+this);
+//				});
+				
+				//$("#"+val).css("background-color","rgb(190, 255, 240)");
+				//$('#count').html(defval);	    	    
+    	    });
+    	});
+
+
+    	
+    	
+    	
+    	var arrid = [];
+    	$('li').each(function() {
+    		arrid.push($(this).attr('id'));
+     	});
+     	
+    	$(arrid).each(function() {
+    		//$("#b").append(this+" ");
+    	});
+    	
+    	var str = $.jStorage.get("kurdi"); 
+    	var arr = str.split(' ');
+    	$(arr).each(function(i) {
+    		$("#"+this).css("background-color","rgb(190, 255, 240)");
+    	});
+  
+
+    	$('.items').each(function() {
+    		$(this).click(function() {
+    			var defval = $.jStorage.get("kurdi");
+    			var val = $(this).attr('id');
+    			if (defval.indexOf(val) <= 0)
+    			{
+    				$.jStorage.set("kurdi",defval+" "+val);
+    				$("#"+val).css("background-color","rgb(190, 255, 240)");
+    				//$('#count').append(val + " ");
+    			}
+    		});
+    	});
+ 
+    	
+		$("ul").show();
+		$("ul#langs").hide();
+		$(".item").click(function() {
+			var id = $(this).attr('id');
+			$("ul#langs").hide();
+			$('ul#'+id).show();
+			$('#back').click(function() {
+				$('ul#'+id).hide();
+				$("ul#langs").fadeIn();
+			});
+		});
+		
+		
+//    	
+//        $('#icon-add').click(function(){
+//        var dd = $('#cat-def').val();
+//        
+//        	if(dd!=''){
+//        				var dn = (dd).toLowerCase();
+//        				var nn = (dn).replace(/\s/g, "");
+//        				$.jStorage.set(nn, dd);
+//        				$('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span type="submit" id="'+nn+'" name="'+nn+'">'+dd+'</li>').hide().appendTo("#cats").fadeIn(2000);
+//        				$('.delcat').hide();
+//                       var b = $.jStorage.get(nn);
+                       //$('#count').append(b);
+//                       history.go(0);
+//                 }
+//             });
+//             var index = $.jStorage.index();
+             // $('#count').append(index + "<br />");
+//          
+//			$(index).each(function(i) {
+//					var b = $.jStorage.get(index[i]);
+					//$('#count').append(b + " <br />");
+//					$('<li id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button type="submit" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</li>').hide().appendTo("#cats").fadeIn(1000);
+//					$('.delcat').hide();
+//				});
+//				
+//			$('#done').hide();
+//			$('#edit').click(function() {
+//				$('#done').show();
+//				$(this).hide();
+//				$('.delcat').fadeIn();
+//				$('li').css('background','none');
+//				$('#felt-rad').fadeOut();
+//			});
+//			
+//			$('#done').click(function() {
+//				$('#edit').show();
+//				$(this).hide();
+//								$('.delcat').hide();
+//								$('li').css('background','url(src/arrow.png) no-repeat');
+//								$('li').css('background-position','254px 22px');
+//				$('#felt-rad').fadeIn();
+//				});
+//			
+//			
+//			
+//	
+//			  
+//			$('.delcat').on('click',function(e){
+//				e.preventDefault();
+//				var del = $(this).attr('id');
+//				$('li#'+del).each(function(){
+//					$(this).fadeOut(600);
+//					$.jStorage.deleteKey(del);
+//				});
+//				
+						//		
+//			     });
+//			
+			//$.jStorage.deleteKey(key)
+             
+    </script>
+    
+    </html>
+
+
+

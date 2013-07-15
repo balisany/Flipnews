@@ -1,18 +1,18 @@
+/*@import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);*/
 @font-face {
   font-family: 'HelveticaNeue';
   font-style: normal;
   font-weight: 400;
   src: url(HelveticaNeue.otf) format('truetype');
 }
+
 body{
-	font-family:'HelveticaNeue',Arial;
+	font-family:'HelveticaNeue', Arial;*/
 	-webkit-user-select: none;  
 	  -moz-user-select: none;    
 	  -ms-user-select: none;      
 	  user-select: none;
 }
-
-
 
 input[type=text]
 {
@@ -26,10 +26,10 @@ input[type=text]
 	-webkit-appearance: none;
 	border-radius: 0;
 }
+
 #cat-creation
 {
 	margin-top: 80px;
-	
 }
 	
 #icon-add
@@ -42,6 +42,8 @@ input[type=text]
 	border: .08em solid rgb(125,125,125);
 	margin-right: 33px;
 	margin-top: -50px;
+	background-position-x: 4;
+	background-position-y: 4;
 }
 
 #felt-rad{
@@ -57,60 +59,90 @@ button#new
 	background: rgb(127,210,244);
 }
 
-ul#cats
+ul
 {
 	list-style: none;
 	width: 80%;
 }
 
-ul#cats >  li
+ul li
 {
-	border: .1em solid #333;
+	border: .05em solid #333;
 	margin-bottom: -1px;
-	background: url(../src/arrow.png) no-repeat;
-	background-position-x: 254px;
-	background-position-y: 22px;
 }
-ul#cats >  li > button
+
+
+
+ul > li{
+		background: url(../src/add.png) no-repeat;
+		background-position-x: 238px;
+		background-position-y: 12px;
+}
+
+ul#cats > li, ul#langs > li{
+		background: url(../src/arrow.png) no-repeat;
+		background-position-x: 254px;
+		background-position-y: 30px;
+}
+ul#langs > li{
+	background-position-y: 21px;
+}
+
+
+ul >  li > button
 {
 	background: none;
 	border: none;
-	padding: 20px 0px 20px 10px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	letter-spacing: .1em;
-	font-family:'HelveticaNeue',Arial;
+	font-family:'HelveticaNeue', Arial;
 }
+
+ul > li
+{
+	padding: 20px 0px 20px 10px;
+	letter-spacing: .1em;
+	font-family: 'HelveticaNeue', Arial;
+	border: 1px solid;
+	font-size: 1.3em;
+}
+
+
 ul#cats >  li:active
 {
 	background-color: rgb(182, 206, 240);
 }
 
-ul#cats > li > i
-{
-	float: right;
-	margin-right:10px;
-	width: 24px;
-	height: 24px;
-	background: url(../src/arrow.png);
-} 
-
-#edit{
-	float: right;
+#edit,#done,#back{
+	letter-spacing: 1px;
 	padding: 10px 20px;
-	background: #eee;
+/*	background: #eee;*/
 	margin: 5px 5px 20px 5px;
 	border: 1px solid #333;
 }
+
+#edit,#done{
+	float: right;
+}
+#back{
+	float: left;
+}
+
 span.delcat{
 	background: rgb(248, 151, 151);
 	width: 70px;
 	text-align: center;
-	height: 67px;
+	height: 74px;
 	display: block;
 	float: left;
-	line-height: 4;
+	line-height: 70px;
 	letter-spacing: 3px;
-	padding-top: 5px;
+	padding-top: 7px;
+	margin-top: -20px;
+	margin-left: -10px;
 }
+
+
+
 
 

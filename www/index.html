@@ -23,9 +23,10 @@
 </style>
 
 </head>
-    <body>
+    <body cz-shortcut-listen="true">
         <div id="main">
-        <span id="edit">Edit</span>
+        <span id="edit">edit</span>
+        <span id="done">done</span>
         <div id="cat-creation">
         	<ul id="cats">
 <!--        		<li><button>Kurdish News</button></li>
@@ -49,12 +50,14 @@
         var dd = $('#cat-def').val();
         
         	if(dd!=''){
-        				var nn = (dd).replace(/\s/g, "");
+        				var dn =(dd).toLowerCase();
+        				var nn = "cat-"+(dn).replace(/\s/g, "");
         				$.jStorage.set(nn, dd);
-        				$('<li><span class="delcat" id="'+nn+'">DEL</span><button type="submit" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
-        				
+        				$('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span><button type="submit" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
+        				$('.delcat').hide();
                        var b = $.jStorage.get(nn);
-                       $('#count').append(b);
+                       //$('#count').append(b);
+                       history.go(0);
                  }
              });
              var index = $.jStorage.index();
@@ -63,20 +66,48 @@
 			$(index).each(function(i) {
 					var b = $.jStorage.get(index[i]);
 					//$('#count').append(b + " <br />");
-					$('<li id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button type="submit" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
+					if (this.indexOf("cat-") >= 0)
+					{
+					$('<li class="catlist" id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button type="submit" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
+//					  $(".catlist").hide();
+//					  $(".catlist").each(function(){
+//					     $('.catlist:contains("cat")').show();
+//					   });
+					}
 					$('.delcat').hide();
 				});
 				
+				
+				//:contains("cat")
+				
+			$('#done').hide();
 			$('#edit').click(function() {
+				$('#done').show();
+				$(this).hide();
 				$('.delcat').fadeIn();
 				$('li').css('background','none');
-				
-					
+				$('#felt-rad').fadeOut();
 			});
-			$('.delcat').click(function(){
-			var del = $(this).attr('id');
-				$('li#'+del).fadeOut(600);
-				$.jStorage.deleteKey(del);
+			
+			$('#done').click(function() {
+				$('#edit').show();
+				$(this).hide();
+								$('.delcat').hide();
+								$('li').css('background','url(src/arrow.png) no-repeat');
+								$('li').css('background-position','254px 22px');
+				$('#felt-rad').fadeIn();
+				});
+			
+			
+			$('.delcat').on('click',function(e){
+				e.preventDefault();
+				var del = $(this).attr('id');
+				$('li#'+del).each(function(){
+					$(this).fadeOut(600);
+					$.jStorage.deleteKey(del);
+				});
+				
+						//		
 			     });
 			
 			//$.jStorage.deleteKey(key)

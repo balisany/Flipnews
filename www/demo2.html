@@ -1,0 +1,101 @@
+<html>
+
+<head>
+	<link href="css/style.css" rel="stylesheet">  
+	<script src="js/json2.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jstorage.js"></script>
+	
+	
+	
+<style>
+
+
+	#main{
+		width: 360px;
+		min-height: 400px;
+		border: 1px solid #eee;
+		margin: auto;
+	}
+	
+	
+	
+</style>
+
+		
+		<script>
+			function insert_value(){
+				var row = document.createElement("tr"),
+					key = document.getElementById('key').value,
+					val = document.getElementById('val').value;
+				$.jStorage.set(key, val);
+				document.getElementById('key').value = "";
+				document.getElementById('val').value = "";
+				reDraw();
+			}
+			
+			function reDraw(){
+				var row, del, index;
+				var rows = document.getElementsByTagName("tr");
+				for(var i=rows.length-1; i>=0; i--){
+					if(rows[i].className == "rida"){
+						rows[i].parentNode.removeChild(rows[i]);
+					}
+				}
+
+				index = $.jStorage.index();
+				for(var i=0; i<index.length;i++){
+					row = document.createElement("tr");
+					row.className = "rida";
+					var t = document.createElement("td");
+					t.innerHTML = index[i];
+					row.appendChild(t);
+					t = document.createElement("td");
+					t.innerHTML  = $.jStorage.get(index[i]);
+					row.appendChild(t);
+					del = document.createElement("a");
+					del.href = "javascript:void(0)";
+					del.innerHTML = "DEL";
+					(function(i){
+						del.onclick = function(){
+							$.jStorage.deleteKey(i);
+							reDraw();
+						};
+					})(index[i])
+					t = document.createElement("td");
+					t.appendChild(del)
+					row.appendChild(t);
+					document.getElementById("tulemused").appendChild(row);
+
+				}
+			}
+		</script>
+		
+		<!-- Exception Hub start -->
+	</head>
+	<body cz-shortcut-listen="true">
+	
+	<div class="container">
+
+	
+	
+
+	
+	
+	<table cellspacing="0" cellpadding="0" style="width: 100%">
+	<thead>
+		<tr><td width="120">KEY</td><td>VALUE</td><td width="50">&nbsp;</td></tr>
+	</thead>
+	<tbody id="tulemused"></tbody>
+
+	<tfoot>
+		<tr>
+			<td><input type="text" id="key" name="key" value="" style="width: 110px;"></td>
+			<td><input type="text" id="val" name="val" value="" style="width: 98%"></td>
+			<td><a href="javascript:insert_value()">ADD</a></td>
+		</tr>
+			</tfoot>
+	</table>
+	<script>reDraw()</script>
+	
+</div></body></html>

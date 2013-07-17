@@ -25,11 +25,13 @@
 </head>
     <body cz-shortcut-listen="true">
         <div id="main">
-        	<span id="back"> &lt; back</span>
+        	<span id="back"> &lt; back</span><span id="done">done</span>
         <div id="cat-creation">
    
-        	  <span id="count"></span>
         	  <span id="b"></span>
+        	  <br />
+        	  <span id="count"></span>
+        	  
         
         	<ul id="langs">
         		<li class="item" id="kurdi">Kurdi</li>
@@ -40,9 +42,9 @@
         	
         	
         	<ul id="kurdi">
-        		<li class="items" id="Hawlati"> Hawlati </li>
-        		<li class="items" id="Awene">Awene</li>
-        		<li class="items" id="Rudaw">Rudaw</li>
+        		<li class="items" id="hawlati">Hawlati </li>
+        		<li class="items" id="awene">Awene</li>
+        		<li class="items" id="rudaw">Rudaw</li>
         	</ul>
         	
         	<ul id="arabic">
@@ -52,18 +54,16 @@
         	</ul>
         	
         	<ul id="turkish">
-        		<li class="items" id="cnn">CNN </li>
+        		<li class="items" id="cnn">CNN</li>
         		<li class="items" id="huriet">Huriet</li>
         		<li class="items" id="haber">Habar</li>
         	</ul>
         	
         	<ul id="farsi">
-        			<li class="items" id="azadi">Azadi </li>
+        			<li class="items" id="azadi">Azadi</li>
         			<li class="items" id="irani">Irani</li>
         			<li class="items" id="tehran">Tehran</li>
-        	</ul>
-        		
-        		
+        	</ul>	
 		
         </div>
 	</div>
@@ -71,142 +71,95 @@
     </body>
     <script>
     	// history.go(-1);
+    	
+    	
   
-    	$(function(){
-    	var str = $.jStorage.get("kurdi"); 
-		var arr = str.split(' ');
-		
-    	    $("li").click(function() {
-    	  		var id = $(this).attr('id'); 
-    	  		var defval = $.jStorage.get("kurdi");	
-    	  		$(arr).each(function() {
-					if(this != id)
-					{	
-						//var val = $(this).attr('id');
-						//$.jStorage.set("kurdi",this+" ");
-							//newval.push(this+" ");
-					}
-				});
-				//var str = $.jStorage.get("kurdi"); 
-//				var arr2 = newval.split(",");
-//				var defval = $.jStorage.get("kurdi");
-//				$(arr2).each(function() {
-//					$.jStorage.set("kurdi",defval+" "+this);
-//				});
-				
-				//$("#"+val).css("background-color","rgb(190, 255, 240)");
-				//$('#count').html(defval);	    	    
-    	    });
-    	});
-
-
-    	
-    	
     	
     	var arrid = [];
-    	$('li').each(function() {
-    		arrid.push($(this).attr('id'));
-     	});
-     	
-    	$(arrid).each(function() {
-    		//$("#b").append(this+" ");
-    	});
+       	var bb = [];
     	
-    	var str = $.jStorage.get("kurdi"); 
-    	var arr = str.split(' ');
-    	$(arr).each(function(i) {
-    		$("#"+this).css("background-color","rgb(190, 255, 240)");
-    	});
-  
-
-    	$('.items').each(function() {
-    		$(this).click(function() {
-    			var defval = $.jStorage.get("kurdi");
-    			var val = $(this).attr('id');
-    			if (defval.indexOf(val) <= 0)
+    	$(document).ready(function () {
+    		var str = $.jStorage.get("kurdi"); 
+    		
+    		var arr = str.split(" ");
+    		$('#b').html(arr + " ");
+    		arr2 = arr.filter(
+    		                 function(a){if (!this[a]) {this[a] = 1; return a;}},
+    		                 {}
+    		                );
+    		
+    		//arr = jQuery.unique(arr);
+    		
+    		  		$(arr).each(function() {
+    						$("#"+this).css("background-color","rgb(190, 255, 240)");
+    				});
+    			arrid = $.merge(arrid,arr);
+    			
+    	
+    	    $('.items').click(function () {
+    	          var id = $(this).attr('id');
+    	        
+    	        
+    	    var index= $.inArray(id, arrid);
+    	    if(index== -1)
+    	       {
+    	         arrid.push(id);
+    	       }
+    	    else
+    	       {
+    	       	arrid=arrid.filter(
+    	       	             function(a){if (!this[a]) {this[a] = 1; return a;}},
+    	       	             {}
+    	       	            );
+    	         arrid.splice(index,1);
+    	       }
+ 			    bb= arrid.filter(function(a){
+			    	if (!this[a]) 
+			    	{
+			    		this[a] = 1; 
+			    		return a;
+			    	}
+			    	},{});
+    	         $('#count').html(bb);
+    	         $('.items').css("background-color","white");
+    	         $(bb).each(function() {
+    	        	$("#"+this).css("background-color","rgb(190, 255, 240)");
+    	        	
+    	         });
+    	      });
+    	      
+    	      
+		  });
+    	
+    	$('#done').click(function() {
+    		bb = bb.filter(function(a){
+    			if (!this[a]) 
     			{
-    				$.jStorage.set("kurdi",defval+" "+val);
-    				$("#"+val).css("background-color","rgb(190, 255, 240)");
-    				//$('#count').append(val + " ");
+    				this[a] = 1; 
+    				return a;
     			}
+    			},{});
+    			
+			var def ="";
+    		$(bb).each(function() {
+    			def +=this + " ";
     		});
+    		$.jStorage.set("kurdi",def);
     	});
- 
     	
-		$("ul").show();
-		$("ul#langs").hide();
+    	
+		$("ul").hide();
+		$("ul#langs").fadeIn();
 		$(".item").click(function() {
 			var id = $(this).attr('id');
 			$("ul#langs").hide();
 			$('ul#'+id).show();
 			$('#back').click(function() {
 				$('ul#'+id).hide();
-				$("ul#langs").fadeIn();
+				$("ul#langs").show();
 			});
 		});
-		
-		
-//    	
-//        $('#icon-add').click(function(){
-//        var dd = $('#cat-def').val();
-//        
-//        	if(dd!=''){
-//        				var dn = (dd).toLowerCase();
-//        				var nn = (dn).replace(/\s/g, "");
-//        				$.jStorage.set(nn, dd);
-//        				$('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span type="submit" id="'+nn+'" name="'+nn+'">'+dd+'</li>').hide().appendTo("#cats").fadeIn(2000);
-//        				$('.delcat').hide();
-//                       var b = $.jStorage.get(nn);
-                       //$('#count').append(b);
-//                       history.go(0);
-//                 }
-//             });
-//             var index = $.jStorage.index();
-             // $('#count').append(index + "<br />");
-//          
-//			$(index).each(function(i) {
-//					var b = $.jStorage.get(index[i]);
-					//$('#count').append(b + " <br />");
-//					$('<li id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button type="submit" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</li>').hide().appendTo("#cats").fadeIn(1000);
-//					$('.delcat').hide();
-//				});
-//				
-//			$('#done').hide();
-//			$('#edit').click(function() {
-//				$('#done').show();
-//				$(this).hide();
-//				$('.delcat').fadeIn();
-//				$('li').css('background','none');
-//				$('#felt-rad').fadeOut();
-//			});
-//			
-//			$('#done').click(function() {
-//				$('#edit').show();
-//				$(this).hide();
-//								$('.delcat').hide();
-//								$('li').css('background','url(src/arrow.png) no-repeat');
-//								$('li').css('background-position','254px 22px');
-//				$('#felt-rad').fadeIn();
-//				});
-//			
-//			
-//			
-//	
-//			  
-//			$('.delcat').on('click',function(e){
-//				e.preventDefault();
-//				var del = $(this).attr('id');
-//				$('li#'+del).each(function(){
-//					$(this).fadeOut(600);
-//					$.jStorage.deleteKey(del);
-//				});
-//				
-						//		
-//			     });
-//			
-			//$.jStorage.deleteKey(key)
-             
-    </script>
+		    </script>
     
     </html>
 

@@ -17,7 +17,7 @@ body{
 input[type=text]
 {
 	height: 50px;
-	width: 221px;
+	width: 238px;
 	border: .08em solid rgb(125,125,125);
 	font-size: 1.5em;
 	font-family:'HelveticaNeue',Arial;
@@ -40,28 +40,34 @@ input[type=text]
 	height: 48px;
 	float: right;
 	border: .08em solid rgb(125,125,125);
-	margin-right: 17px;
+	margin-right: 33px;
 	margin-top: -50px;
 	background-position-x: 4;
 	background-position-y: 4;
 }
 
 #felt-rad{
-	margin-left: 15px;
+	margin-left: 40px;
 }
 
-
+button#new
+{
+	width: 250px;
+	height: 40px;
+	border: 2px solid rgb(125,125,125);
+	margin-left: 10%;
+	background: rgb(127,210,244);
+}
 
 ul
 {
 	list-style: none;
-	width: 90%;
-    margin-left:-25px;
+	width: 80%;
 }
 
 ul li
 {
-	border: .08em solid rgb(125,125,125);
+	border: .05em solid #333;
 	margin-bottom: -1px;
 }
 
@@ -69,90 +75,74 @@ ul li
 
 ul > li{
 		background: url(../src/add.png) no-repeat;
-		background-position-x: 222px;
+		background-position-x: 238px;
 		background-position-y: 12px;
 }
 
 ul#cats > li, ul#langs > li{
 		background: url(../src/arrow.png) no-repeat;
-		background-position-x: 234px;
-		background-position-y: 25px;
+		background-position-x: 254px;
+		background-position-y: 30px;
 }
 ul#langs > li{
 	background-position-y: 21px;
 }
 
-  .add-items > ul > li
-   {
-    padding:20px 20px;
-   }
 
 ul >  li > button
 {
 	background: none;
-    min-width:180px;
 	border: none;
-	font-size: 1.0em;
+	font-size: 1.3em;
 	letter-spacing: .1em;
-    font-family:'HelveticaNeue', Arial;
-    padding:0;
-    margin-left:10px;
-    text-align:left;
+	font-family:'HelveticaNeue', Arial;
 }
 
 ul > li
 {
-	padding: 20px 0px;
+	padding: 20px 0px 20px 10px;
 	letter-spacing: .1em;
 	font-family: 'HelveticaNeue', Arial;
 	border: 1px solid;
 	font-size: 1.3em;
 }
 
+
 ul#cats >  li:active
 {
 	background-color: rgb(182, 206, 240);
 }
 
-.item-button{
+#edit,#done,#back{
 	letter-spacing: 1px;
 	padding: 10px 20px;
 /*	background: #eee;*/
 	margin: 5px 5px 20px 5px;
-	border: .08em solid rgb(196, 196, 196);
+	border: 1px solid #333;
 }
 
-.item-button.right{
+#edit,#done{
 	float: right;
 }
-.item-button.left{
+#back{
 	float: left;
-}
-
-span.item-button:focus{
-	background-color: #2f2ffa;
 }
 
 span.delcat{
 	background: rgb(248, 151, 151);
 	width: 70px;
 	text-align: center;
-	height: 62px;
+	height: 74px;
 	display: block;
 	float: left;
-	line-height: 58px;
+	line-height: 70px;
 	letter-spacing: 3px;
 	padding-top: 7px;
 	margin-top: -20px;
-    margin-right:-5px;
-    color:white;
+	margin-left: -10px;
 }
 
-*:not(input):not(textarea) {
--webkit-user-select: none; /* disable selection/Copy of UIWebView */
-    -webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
 
-}
 
 
 

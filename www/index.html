@@ -1,188 +1,285 @@
 <html>
+    
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+            <script src="js/json2.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jstorage.js"></script>
+            
 
-<head>
-	<link href="css/style.css" rel="stylesheet">  
-	<script src="js/json2.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jstorage.js"></script>
-	
-
-	
-	
-<style>
-
-
-	#main{
-        border: 1px solid #fff;
-		margin: auto;
-		width: 360px;
-	}
-	
-</style>
-
-</head>
+            <style>
+                #front,#lang-page{
+                    border: 1px solid #fff;
+                    margin: auto;
+                }
+                
+                ul{
+                    margin-top:90px;
+                }
+                
+                
+                </style>
+            
+    </head>
     <body cz-shortcut-listen="true">
         <div id="main">
-        <div id="front">
-        <span id="edit-front">edit</span>
-        <span id="done-front">done</span>
+            <div id="front">
+                <span class="item-button left" id="edit-front">edit</span>
+                <span class="item-button right" id="done-front">done</span>
+             
+                
                 <ul id="cats">
                     
                 </ul >
-
-			<div id="felt-rad"><input type="text" id="cat-def" maxlength="12" value="" /> <span id="icon-add"></span></div>
-
+                
+                <div id="felt-rad"><input type="text" id="cat-def" maxlength="12" autocorrect="off" placeholder="Create a category!"/> <br />
+                    <span id="icon-add"></span></div>     
+            </div>
+            
+            
+            <div id="lang-page">
+                <span class="item-button left" id="back-front">back</span>
+                <span class="item-button left" id="back-lang">back</span>
+                <span class="item-button right" id="done-lang">done</span>
+                
+                <ul id="langs">
+                    <li class="item" id="kurdi">Kurdi</li>
+                    <li class="item" id="arabic">Arabic</li>
+                    <li class="item" id="turkish">Turkish</li>
+                    <li class="item" id="farsi">Farsi</li>
+                </ul >
+                
+                
+                <ul class="lang-items" id="kurdi">
+                    <li class="items" id="hawlati">Hawlati</li>
+                    <li class="items" id="awene">Awene</li>
+                    <li class="items" id="rudaw">Rudaw</li>
+                </ul>
+                
+                <ul class="lang-items" id="arabic">
+                    <li class="items" id="khabar">Al khabar </li>
+                    <li class="items" id="zaman">Zaman</li>
+                    <li class="items" id="arabia">Al arabiya</li>
+                </ul>
+                
+                <ul class="lang-items" id="turkish">
+                    <li class="items" id="cnn">CNN</li>
+                    <li class="items" id="huriet">Huriet</li>
+                    <li class="items" id="haber">Habar</li>
+                </ul>
+                
+                <ul class="lang-items" id="farsi">
+                    <li class="items" id="azadi">Azadi</li>
+                    <li class="items" id="irani">Irani</li>
+                    <li class="items" id="tehran">Tehran</li>
+                </ul>
+            </div>
+            
         </div>
         
         
-        <div id="lang-page">
-        <span id="back">back</span><span id="done">done</span>
-        
-        <br /><br /><br /><span id="b"></span>
-        <ul id="langs"> 
-        	<li class="item" id="kurdi">Kurdi</li>
-        	<li class="item" id="arabic">Arabic</li>
-         	<li class="item" id="turkish">Turkish</li>
-         	<li class="item" id="farsi">Farsi</li>
-        </ul >
-        
-        
-        <ul class="lang-items" id="kurdi">
-        	<li class="items" id="hawlati">Hawlati </li>
-        	<li class="items" id="awene">Awene</li>
-        	<li class="items" id="rudaw">Rudaw</li>
-        </ul>
-        
-        <ul class="lang-items" id="arabic">
-        	<li class="items" id="khabar">Al khabar </li>
-        	<li class="items" id="zaman">Zaman</li>
-        	<li class="items" id="arabia">Al arabiya</li>
-        </ul>
-        
-        <ul class="lang-items" id="turkish">
-        	<li class="items" id="cnn">CNN</li>
-        	<li class="items" id="huriet">Huriet</li>
-        	<li class="items" id="haber">Habar</li>
-        </ul>
-        
-        <ul class="lang-items" id="farsi">
-        		<li class="items" id="azadi">Azadi</li>
-        		<li class="items" id="irani">Irani</li>
-        		<li class="items" id="tehran">Tehran</li>
-        </ul>	
-        </div>
-
-	</div>
-
-
-
-
-
-	
     </body>
     <script>
-//        $('#demo').click(function(){
-//                         $.ajax({
-//                                type: "POST",
-//                                url: "lang.html",
-//                                data: { navn: "John"}
-//                                }).done(function( data ) {
-//                                        alert(data);
-//                                        $('#msg').html(data.navn);
-//                                        });
-//                         });
+        $('#cat-def').bind('keyup blur',function(){
+                           $(this).val( $(this).val().replace(/[^a-zA-Z0-9\s]/g,'') ); }
+                           );
+        //        $('#demo').click(function(){
+        //                         $.ajax({
+        //                                type: "POST",
+        //                                url: "lang.html",
+        //                                data: { navn: "John"}
+        //                                }).done(function( data ) {
+        //                                        alert(data);
+        //                                        $('#msg').html(data.navn);
+        //                                        });
+        //                         });
         
         $('#icon-add').click(function(){
-        var dd = $('#cat-def').val();
+                             var dd = $('#cat-def').val();
+                             if(dd!=''){
+                             var dn =(dd).toLowerCase();
+                             var nn = "cat-"+(dn).replace(/\s/g, "");
+                             $.jStorage.set(nn, dd);
+                             $.jStorage.set(dn, "");
+                             $('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span><button type="" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
+                             $('.delcat').hide();
+                             var b = $.jStorage.get(nn);
+                             //$('#count').append(b);
+                             history.go(0);
+                             }
+                             });
+        var index = $.jStorage.index();
+        // $('#count').append(index + "<br />");
         
-        	if(dd!=''){
-        				var dn =(dd).toLowerCase();
-        				var nn = "cat-"+(dn).replace(/\s/g, "");
-        				$.jStorage.set(nn, dd);
-        $('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span><button type="" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
-        				$('.delcat').hide();
-                       var b = $.jStorage.get(nn);
-                       //$('#count').append(b);
-                       history.go(0);
-                 }
-             });
-             var index = $.jStorage.index();
-             // $('#count').append(index + "<br />");
-          
-			$(index).each(function(i) {
-					var b = $.jStorage.get(index[i]);
-					//$('#count').append(b + " <br />");
-					if (this.indexOf("cat-") >= 0)
-					{
-					$('<li class="catlist" id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button class="itemname" type="" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
-					}
-					$('.delcat').hide();
-				});
-				
-				
-				//:contains("cat")
-				
-			$('#done-front').hide();
-			$('#edit-front').click(function() {
-				$('#done-front').show();
-				$(this).hide();
-				$('.delcat').fadeIn();
-				$('li').css('background','none');
-				$('#felt-rad').fadeOut();
-			});
-			
-			$('#done-front').click(function() {
-				$('#edit-front').show();
-				$(this).hide();
-								$('.delcat').hide();
-								$('li').css('background','url(src/arrow.png) no-repeat');
-                                $('li').css('background-position-x','238px');
-                                $('li').css('background-position-y','27px');
-                                //$('li>button').css('margin-left','-20px');
-				$('#felt-rad').fadeIn();
-                             
-				});
-			
-			
-			$('.delcat').on('click',function(e){
-				e.preventDefault();
-				var del = $(this).attr('id');
-				$('li#'+del).each(function(){
-					$(this).fadeOut(600);
-					$.jStorage.deleteKey(del);
-				});
-            });
-            
-            
-            //klikker -> viser språk side -> språk lister
-            var catid = "";
-            
-            $('.itemname').click(function() {
-            	var txt = ($(this).text()).toLowerCase();
-            	catid = txt;
-            	$.jStorage.set(txt,"");
-            	 $("#lang-page").fadeIn();
-            	$('#front').hide();
-            	$('#b').html(catid);
-            });
-            
-            $(".item").click(function() {
-            	var id = $(this).attr('id');
-            	$("ul#langs").hide();
-                //$('#back').hide();
-            	$('ul#'+id).show();
-                             
-            });
-            
-            
-            
-            //$.jStorage.deleteKey(key)
-			$('#lang-page').hide();
-			$('.lang-items').hide();
-             
-    </script>
+        $(index).each(function(i) {
+                      var b = $.jStorage.get(index[i]);
+                      //$('#count').append(b + " <br />");
+                      if (this.indexOf("cat-") >= 0)
+                      {
+                      $('<li class="catlist" id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button class="itemname" type="" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
+                      }
+                      $('.delcat').hide();
+                      });
+        
+        
+        //:contains("cat")
+        
+        $('#done-front').hide();
+        $('#edit-front').click(function() {
+                               $('#done-front').show();
+                               $(this).hide();
+                               $('.delcat').fadeIn();
+                               $('li').css('background','none');
+                               $('#felt-rad').fadeOut();
+                               });
+        
+        $('#done-front').click(function() {
+                               $('#edit-front').show();
+                               $(this).hide();
+                               $('.delcat').hide();
+                               $('li').css('background','url(src/arrow.png) no-repeat');
+                               $('li').css('background-position-x','238px');
+                               $('li').css('background-position-y','27px');
+                               //$('li>button').css('margin-left','-20px');
+                               $('#felt-rad').fadeIn();
+                               
+                               });
+        
+        $('.delcat').on('click',function(e){
+                        e.preventDefault();
+                        var del = $(this).attr('id');
+                        var catname = $('li#'+del+">button").text();
+                        $('li#'+del).each(function(){
+                                          $(this).fadeOut(600);
+                                          $.jStorage.deleteKey(catname);
+                                          $.jStorage.deleteKey(del);
+                                          });
+                        });
+        
+        //klikker -> viser språk side -> språk lister
+        var arrid = [];
+        var bb = [];
+        var catid;
+        $('.itemname').click(function() {
+                             var txt = ($(this).text()).toLowerCase();
+                             catid = txt;
+                             $("#lang-page").fadeIn();
+                             $('#front').hide();
+                             $('#back-lang').hide();
+                             $('#done-lang').hide();
+                             $(".lang-items").hide();
+                             $('#back-front').show();
+                             $('#langs').show();
+                             });
+        
+        $(".item").click(function() {
+                         var id = $(this).attr('id');
+                         $("ul#langs").hide();
+                         //$('#back').hide();
+                         $('ul#'+id).show();
+                         $('#back-lang').show();
+                         $('#done-lang').show();
+                         $('#back-front').hide();
+                         var str = $.jStorage.get(catid);
+                         var arr = str.split(" ");
+                         arr2 = arr.filter(
+                                           function(a){if (!this[a]) {this[a] = 1; return a;}},
+                                           {}
+                                           );
+                         
+                         //arr = jQuery.unique(arr);
+                         
+                         $(arr).each(function() {
+                                     $("#"+this).css("background-color","rgb(190, 255, 240)");
+                                     });
+                         arrid = $.merge(arrid,arr);
+                         $('.items').click(function () {
+                                           var id = $(this).attr('id');
+                                           
+                                           
+                                           var index= $.inArray(id, arrid);
+                                           if(index== -1)
+                                           {
+                                           arrid.push(id);
+                                           }
+                                           else
+                                           {
+                                           arrid=arrid.filter(
+                                                              function(a){if (!this[a]) {this[a] = 1; return a;}},
+                                                              {}
+                                                              );
+                                           arrid.splice(index,1);
+                                           }
+                                           bb= arrid.filter(function(a){
+                                                            if (!this[a]) 
+                                                            {
+                                                            this[a] = 1; 
+                                                            return a;
+                                                            }
+                                                            },{});
+                                           $('.items').css("background-color","white");
+                                           $(bb).each(function() {
+                                                      $("#"+this).css("background-color","rgb(190, 255, 240)");
+                                                      
+                                                      });
+                                           });
+                         });
+        
+        $('#back-lang').click(function() {
+                              $('ul').hide();
+                              $('#langs').show();
+                              $('#back-front').show();
+                              $('#back-lang').hide();
+                              });    
+        
+        $('#back-front').click(function() {
+                               $('#lang-page').hide();
+                               $("#front").show();
+                               $("ul#cats").show();
+                               $('#back-front').hide();
+                               catid="";
+                               bb="";
+                               arrid ="";
+                               history.go(0);
+                               });
+        
+        
+        $('#done-lang').click(function() {
+                              bb = bb.filter(function(a){
+                                             if (!this[a]) 
+                                             {
+                                             this[a] = 1; 
+                                             return a;
+                                             }
+                                             },{});
+                              
+                              if (bb.length !== 0) {
+                              var def ="";
+                              $(bb).each(function() {
+                                         def +=this + " ";
+                                         });
+                              $.jStorage.set(catid,def);
+                              }
+                              catid="";
+                              bb="";
+                              arrid ="";
+                              $('#lang-page').hide();
+                              $("#front").show();
+                              $("ul#cats").show();
+                              $('#back-front').hide();
+                              $('#done-lang').hide();
+                              history.go(0);
+                              });
+        
+        //$.jStorage.deleteKey(key)
+        $('#lang-page').hide();
+        $('.lang-items').hide();
+        
+        
+        
+        </script>
     
-    </html>
+</html>
 
 
 

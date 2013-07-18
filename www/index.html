@@ -6,46 +6,92 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jstorage.js"></script>
 	
+
 	
 	
 <style>
 
 
 	#main{
-		width: 360px;
-		min-height: 400px;
-		border: 1px solid #eee;
+        border: 1px solid #fff;
 		margin: auto;
+		width: 360px;
 	}
-	
-	
 	
 </style>
 
 </head>
     <body cz-shortcut-listen="true">
         <div id="main">
-        <span id="edit">edit</span>
-        <span id="done">done</span>
-        <div id="cat-creation">
-        	<ul id="cats">
-<!--        		<li><button>Kurdish News</button></li>
-             	<li><button>Arabic News</button> </li>-->
-        	</ul >
-			
-			<div id="felt-rad"><input type="text" id="cat-def" name="" value="" /> <span id="icon-add"></span></div>
-        </div>
-	</div>
-	<p>
+        <div id="front">
+        <span id="edit-front">edit</span>
+        <span id="done-front">done</span>
+                <ul id="cats">
+                    
+                </ul >
 
-	  <span id="count"></span>
-	  
-	</p>
+			<div id="felt-rad"><input type="text" id="cat-def" maxlength="12" value="" /> <span id="icon-add"></span></div>
+
+        </div>
+        
+        
+        <div id="lang-page">
+        <span id="back">back</span><span id="done">done</span>
+        
+        <br /><br /><br /><span id="b"></span>
+        <ul id="langs"> 
+        	<li class="item" id="kurdi">Kurdi</li>
+        	<li class="item" id="arabic">Arabic</li>
+         	<li class="item" id="turkish">Turkish</li>
+         	<li class="item" id="farsi">Farsi</li>
+        </ul >
+        
+        
+        <ul class="lang-items" id="kurdi">
+        	<li class="items" id="hawlati">Hawlati </li>
+        	<li class="items" id="awene">Awene</li>
+        	<li class="items" id="rudaw">Rudaw</li>
+        </ul>
+        
+        <ul class="lang-items" id="arabic">
+        	<li class="items" id="khabar">Al khabar </li>
+        	<li class="items" id="zaman">Zaman</li>
+        	<li class="items" id="arabia">Al arabiya</li>
+        </ul>
+        
+        <ul class="lang-items" id="turkish">
+        	<li class="items" id="cnn">CNN</li>
+        	<li class="items" id="huriet">Huriet</li>
+        	<li class="items" id="haber">Habar</li>
+        </ul>
+        
+        <ul class="lang-items" id="farsi">
+        		<li class="items" id="azadi">Azadi</li>
+        		<li class="items" id="irani">Irani</li>
+        		<li class="items" id="tehran">Tehran</li>
+        </ul>	
+        </div>
+
+	</div>
+
+
+
+
 
 	
     </body>
     <script>
-    	
+//        $('#demo').click(function(){
+//                         $.ajax({
+//                                type: "POST",
+//                                url: "lang.html",
+//                                data: { navn: "John"}
+//                                }).done(function( data ) {
+//                                        alert(data);
+//                                        $('#msg').html(data.navn);
+//                                        });
+//                         });
+        
         $('#icon-add').click(function(){
         var dd = $('#cat-def').val();
         
@@ -53,7 +99,7 @@
         				var dn =(dd).toLowerCase();
         				var nn = "cat-"+(dn).replace(/\s/g, "");
         				$.jStorage.set(nn, dd);
-        				$('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span><button type="submit" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
+        $('<li id="'+nn+'"><span class="delcat" id="'+nn+'">DEL</span><button type="" id="'+nn+'" name="'+nn+'">'+dd+'</button></li>').hide().appendTo("#cats").fadeIn(2000);
         				$('.delcat').hide();
                        var b = $.jStorage.get(nn);
                        //$('#count').append(b);
@@ -68,11 +114,7 @@
 					//$('#count').append(b + " <br />");
 					if (this.indexOf("cat-") >= 0)
 					{
-					$('<li class="catlist" id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button type="submit" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
-//					  $(".catlist").hide();
-//					  $(".catlist").each(function(){
-//					     $('.catlist:contains("cat")').show();
-//					   });
+					$('<li class="catlist" id="'+index[i]+'"><span class="delcat" id="'+index[i]+'">DEL</span> <button class="itemname" type="" id="'+index[i]+'"  name="'+index[i]+'">'+b+'</button></li>').hide().appendTo("#cats").fadeIn(1000);
 					}
 					$('.delcat').hide();
 				});
@@ -80,22 +122,25 @@
 				
 				//:contains("cat")
 				
-			$('#done').hide();
-			$('#edit').click(function() {
-				$('#done').show();
+			$('#done-front').hide();
+			$('#edit-front').click(function() {
+				$('#done-front').show();
 				$(this).hide();
 				$('.delcat').fadeIn();
 				$('li').css('background','none');
 				$('#felt-rad').fadeOut();
 			});
 			
-			$('#done').click(function() {
-				$('#edit').show();
+			$('#done-front').click(function() {
+				$('#edit-front').show();
 				$(this).hide();
 								$('.delcat').hide();
 								$('li').css('background','url(src/arrow.png) no-repeat');
-								$('li').css('background-position','254px 22px');
+                                $('li').css('background-position-x','238px');
+                                $('li').css('background-position-y','27px');
+                                //$('li>button').css('margin-left','-20px');
 				$('#felt-rad').fadeIn();
+                             
 				});
 			
 			
@@ -106,11 +151,34 @@
 					$(this).fadeOut(600);
 					$.jStorage.deleteKey(del);
 				});
-				
-						//		
-			     });
-			
-			//$.jStorage.deleteKey(key)
+            });
+            
+            
+            //klikker -> viser språk side -> språk lister
+            var catid = "";
+            
+            $('.itemname').click(function() {
+            	var txt = ($(this).text()).toLowerCase();
+            	catid = txt;
+            	$.jStorage.set(txt,"");
+            	 $("#lang-page").fadeIn();
+            	$('#front').hide();
+            	$('#b').html(catid);
+            });
+            
+            $(".item").click(function() {
+            	var id = $(this).attr('id');
+            	$("ul#langs").hide();
+                //$('#back').hide();
+            	$('ul#'+id).show();
+                             
+            });
+            
+            
+            
+            //$.jStorage.deleteKey(key)
+			$('#lang-page').hide();
+			$('.lang-items').hide();
              
     </script>
     

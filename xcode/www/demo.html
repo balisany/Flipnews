@@ -1,0 +1,75 @@
+<html>
+    <head>
+    	 <link href="css/contentstyle.css" rel="stylesheet">
+             <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    
+             <style>
+                 span#back{
+                     display:block;
+                 }
+                 #ajax-panel
+                 {
+                     float:right;
+                     margin-top:-30px;
+                 }
+                 </style>
+             
+     <script src="" type="text/javascript">
+     </script>
+           </head>
+    <body>
+        <span class="item-button left" id="back">back</span>
+    	<div id='result'></div>
+        <div id='container'></div>
+    </body>
+  <script src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/script.js"></script>
+    	<script type="text/javascript">
+    	var kurdishsrc ='&#1587;&#1607;&#8204;&#1585;&#1670;&#1575;&#1608;&#1607;&#8204;';
+    
+        		requestCrossDomain('http://rudaw.net/sorani/kurdistan/1807201334','//div[@class=\'mainColumn\']', function(results) {  
+        			   $('#container').html(results);
+        			   $('.commentsHolder.margBot20').remove();
+        			   $('.subPageSecondCol').remove();
+        			   $('.subPageSecondCol').remove();
+        			   $('.specialContent .question').remove();
+       				   $('#result').append('<h1>'+$(".articleTitle").text()+'</h1>');
+       				   $('#result').append('<span id="date">'+$('span.newsDate').text()+'</span><br />');
+       				   $('#result').append($('img#articleBigImage'));
+       				   $('.galleryImageHeight').find('iframe').appendTo('#result');
+       			 	   $(".articleTitle").remove();
+       			 	   $('.imageDesc').remove();
+       			 	   if($('#printableArea > div > p').length!=0){
+       			 	   		$('#printableArea > div > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+       			 	   else if($('#printableArea > p').length!=0){
+       			 	   		$('#printableArea > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+       			 	   	else {
+       			 	   		$('#printableArea > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+					   $('#container').remove();
+					    $('#result').append("<span><a id='linksrc' href='http://rudaw.net/sorani/kurdistan/1807201334'> "+ kurdishsrc+": Rudaw</a></span>");
+        			  });
+        		
+             // var img = $('.img-dreje').attr('src');
+             
+      
+      
+              
+          </script>
+    <script>
+        $('#back').click(function(){
+                         history.go(-1);
+                         });
+        </script>
+</html>
+
+   

@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+ /* src: url(DroidNaskh.ttf)format('truetype');
+  src: url(DroidNaskh.ttf)format('truetype'); */
+  src: url(amiri-quran.ttf)format('truetype');
+}
+
+body{
+		font-family: 'Droid Arabic Naskh', serif;
+		direction: rtl;
+		background: no-repeat url(../src/bg.png) 0 0;
+		background-color: rgb(245,246,245);
+		background-repeat: repeat;
+		padding: 1% 1%;
+		margin: 0;
+	}
+
+     #linksrc{
+     	font-size: 1.0em;
+     	color: #3399FF;
+     	letter-spacing: .1em;
+     	text-decoration: none;
+     	line-height: 1.7em;
+     	padding: 5px 0;
+     	text-shadow: 1px 1px 1px #ccc;
+     }
+     
+     p{
+     	vertical-align: text-top;
+     	font-size: 1.2em;
+     	letter-spacing: 1px;
+     	text-decoration: none;
+     	display: block;
+     	line-height: 1.5em;
+     	text-shadow: 1px 1px #fff;
+     	margin: 0;
+        direction: rtl;
+        padding:0px 5px;
+     }
+     
+     p > br
+     {
+     	margin: 5px;
+     }
+     
+     h1{
+     	vertical-align: text-top;
+     	font-size: 1.2em;
+     	text-shadow: 1px 1px #fff;
+        letter-spacing: 1px;
+        padding:0px 5px;
+        line-height: 1.6em;
+     } 		
+
+	 img,iframe
+	   {
+       margin-bottom:10px;
+	   	border: none;
+	   	vertical-align: middle;
+	   	-webkit-border-radius: 2px;
+        width:100%;
+	   } 
+	   
+	 #video iframe
+	  {
+	  	border: none;
+	  	vertical-align: middle;
+	  	border: 5px solid #fff;
+	  	-webkit-border-radius: 2px;
+	  	margin-left: 10px;
+	  	margin-bottom: 50px;
+	  } 
+	 
+	 
+	   
+	 #date{
+			font-size:.8em;
+	 	 }
+	 #slides img
+	 {
+	 	max-height: 20%;
+	 	margin: 2px;
+	 }

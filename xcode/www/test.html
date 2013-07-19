@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="css/contentstyle.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Hello World</title>
+<script src="js/jquery.min.js"></script>
+
+<script type="text/javascript" src="cordova-2.0.0.js"></script>
+<script type="text/javascript">
+var kurdishsrc ="&#1587;&#1607;&#8204;&#1585;&#1670;&#1575;&#1608;&#1607;&#8204;";
+var link = "http://rudaw.net/sorani/kurdistan/1807201334";
+$.ajax({
+       type: 'POST',
+       url: link,
+       data: { postVar1: 'theValue1', postVar2: 'theValue2' },
+       beforeSend:function(){
+       // this is where we append a loading image
+       $('#ajax-panel').html('<div class="loading"><img src="loading.gif" alt="Loading..." /></div>');
+       },
+       success:function(data){
+       // successful request; do something with the data
+       $('#ajax-panel').empty();
+       var myArray = [];
+       $(data).find('.mainColumn').each(function(i){
+            var tit = $(this).find('.articleTitle').html();
+            var img = $(this).find('.bigImage').html();
+            $('#ajax-panel').append('<h1>'+ tit +'</h1>');
+            $(img).hide().appendTo("#ajax-panel").fadeIn(3000);
+           // $('#ajax-panel').append(img);
+            $(this).find('#printableArea>div').each(function(i){
+
+                 $('<p>'+$(this).html()+'</p>').hide().appendTo("#ajax-panel").fadeIn(2000);
+            });
+            $('#ajax-panel').append(kurdishsrc + ":<br />"+link);
+        });
+       },
+       error:function(){
+       // failed request; give feedback to user
+       $('#ajax-panel').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+       }
+       });
+
+
+</script>
+<style>
+span#back{
+    display:block;
+}
+#ajax-panel
+{
+    float:right;
+    margin-top:-30px;
+    margin-bottom:20px;
+}
+</style>
+
+</head>
+<body>
+<span class="item-button left" id="back">back</span>
+<div id="ajax-panel">
+
+</div>
+<script>
+$('#back').click(function(){
+                 history.go(-1);
+                 });
+</script>
+</body>
+</html>
+
+
+

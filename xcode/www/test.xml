@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kyle Schaeffer</title>
+	<atom:link href="http://kyleschaeffer.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://kyleschaeffer.com</link>
+	<description>Web Design &#38; SharePoint Branding</description>
+	<lastBuildDate>Mon, 20 May 2013 18:34:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.5.2</generator>
+		<item>
+		<title>Wires by QuirkTools</title>
+		<link>http://kyleschaeffer.com/user-experience/wires-by-quirktools/</link>
+		<comments>http://kyleschaeffer.com/user-experience/wires-by-quirktools/#comments</comments>
+		<pubDate>Mon, 20 May 2013 18:34:32 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[User Experience]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Projects]]></category>
+		<category><![CDATA[Video]]></category>
+		<category><![CDATA[Wireframes]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1319</guid>
+		<description><![CDATA[My lack of posts as of late is largely due to my pet project, QuirkTools. It&#8217;s been much more successful than I had ever anticipated, and I&#8217;m excited to be working on some exciting new features that will be released &#8230; <a href="http://kyleschaeffer.com/user-experience/wires-by-quirktools/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>My lack of posts as of late is largely due to my pet project, <a href="https://quirktools.com">QuirkTools</a>. It&#8217;s been much more successful than I had ever anticipated, and I&#8217;m excited to be working on some exciting new features that will be released in the coming days and weeks. If you&#8217;ve never seen QuirkTools, check out this video showcasing the flagship web app, Wires.<span id="more-1319"></span></p>
+<iframe src="http://www.youtube.com/embed/h6L0NATD2Rk?version=3&amp;wmode=transparent" width="560" height="340" style="background-color:#000;display:block;margin-bottom:0;max-width:100%;" title="YouTube video player" frameborder="0" allowfullscreen></iframe><p style="font-size:11px;margin-top:0;"><a href="http://www.youtube.com/watch?v=h6L0NATD2Rk" target="_blank" title="Watch on YouTube">Watch this video on YouTube</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/user-experience/wires-by-quirktools/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>The User is Never Wrong</title>
+		<link>http://kyleschaeffer.com/user-experience/the-user-is-never-wrong/</link>
+		<comments>http://kyleschaeffer.com/user-experience/the-user-is-never-wrong/#comments</comments>
+		<pubDate>Fri, 25 Jan 2013 15:07:18 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[User Experience]]></category>
+		<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1272</guid>
+		<description><![CDATA[In years past, as a wee adolescent first discovering the intimidating art of interaction with real people, I worked as a sales clerk in a local software store. At the store, we had a motto, something that you&#8217;ve probably heard &#8230; <a href="http://kyleschaeffer.com/user-experience/the-user-is-never-wrong/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>In years past, as a wee adolescent first discovering the intimidating art of interaction with <em>real people</em>, I worked as a sales clerk in a local software store. At the store, we had a motto, something that you&#8217;ve probably heard many times before: <em>the customer is always right</em>. I will say now that I didn&#8217;t fully believe in our motto at the time. I was young, naive, and perhaps even a little cocky (weren&#8217;t we all?).<span id="more-1272"></span></p>
+<p>There is one incident in particular that I will never forget. We had a customer who stormed into the store, made a bee-line for the checkout counter, and immediately started yelling. There was no escalation; this man went from zero to red-in-the-face-irate in no time at all. &#8220;I demand a refund,&#8221; he proclaimed. By his tone, I knew that he was already aware our return policy: no opened items will be accepted. This was in the days, if you will remember, when computers actually had optical disc drives and you purchased software in boxes. In the infancy of CD writers, it was exceedingly easy to copy unprotected software, and thus our return policy was understandably strict. The man standing in front of me obviously disagreed.</p>
+<p>I looked at the open box in his hand and began with the customary and practiced response: &#8220;I&#8217;m sorry, sir, but we can&#8217;t accept returns of any unopened software.&#8221;</p>
+<p>&#8220;No,&#8221; he interrupted. &#8220;No, I want a refund. This damned thing cost me forty dollars and it&#8217;s terrible.&#8221; He looked at me with raised eyebrows, as if his statement made it plainly obvious that he was entitled to his request.</p>
+<p>I was, and have always been, someone who avoids conflict at all costs, and this situation was making me quite uncomfortable. Fortunately for me, the manager of the store was nearby, and eager to step in. I looked at him as if to say, &#8220;What now?&#8221; Strangely fond of this sort of situation, the manager was happy to replace me and reinforce my recital of the return policy to our angry new friend. A yelling match ensued, and the two men fired back and forth, culminating with the customer storming out of the store in an angry fit.</p>
+<p>An uneasy silence settled over the store as the customer left. The entry bell chimed a nervous tone, and we were left once again to the peace of an empty store. The manager and I exchanged glances and returned to our daily regimen.</p>
+<p>The next day, it was business as usual. Normal, happy customers came and went, browsers browsed and buyers bought. The day was nearly complete when our disgruntled customer enter the store once again, this time armed not with a loud and angry voice, but with a casual and confident smirk on his face. I looked to the manager for support, but he had a defeated look on his face. He was not going to put up a fight.</p>
+<p>Our argumentative customer received not only a full refund for his opened box of software, but also a free complimentary product of his choice. I had never seen a smile so wide. We had offered him what was essentially an apology of the monetary kind. I couldn&#8217;t believe it. I didn&#8217;t agree with it. My manager must have seen the look on my face.</p>
+<p>&#8220;The customer is <em>always</em> right,&#8221; he said. &#8220;Even when the customer is wrong, they&#8217;re always right.&#8221;</p>
+<h2>The User is <em>Never</em> Wrong</h2>
+<p>Now, years later, I work with a very different type of customer. I design and build interactive interfaces. I create websites. My customer is the <em>user</em>. Looking back, I realize that even though it didn&#8217;t feel right, and even though I didn&#8217;t agree with the angriest customer I&#8217;ve ever seen, we were right to give him a refund. In the end, it doesn&#8217;t matter who is <em>right</em>, it matters how people feel about the service. It&#8217;s all about the experience. It&#8217;s about the emotions that people associate with your product. Be it an electronic gadget, a child&#8217;s toy, a car, or something that appears on a digital screen, we as users don&#8217;t remember the product, itself. We remember the emotions the product creates. We remember how the product makes us feel, be it anything between fantastic and infuriating.</p>
+<p>The truth is, the customer (the user) is never wrong. This is a lesson learned that I think about constantly. It was in a different time, in a different industry, and in a different context, but it applies all the same. I still work to serve a customer, and I can never forget that. Creating a good user experience is about creating something that people will remember with positive emotional association. In order to do that, we need to make decisions on behalf of our users. We need to empower them, and cater to their needs. We need to realize that the user is always right. <em>Always</em>. More specifically, we need to create consistency, communicate clearly, and eliminate potential frustrations in our products.</p>
+<h3>Creating Consistency</h3>
+<p>Different products call for the cultivation of different emotions. A sports car can invoke emotions of power and awe, or of luxury and elegance. A more modest sedan, however, may be portrayed in the emotional light of reliability and value, or of safety and security. They are similar products, but have completely different emotional associations intended for different types of customers.</p>
+<p>The same holds true in the world of interactive design. Not all interfaces are created equal. What works well in one website may be awkward and out of place in another. One of the most valuable assets I can bring to a design project is a practice of consistency. From the very beginning, it is imperative to study and understand the users of a system. Once you know the user, you can develop an appropriate message, and reinforce that message at every step of the way. This should persist from the project&#8217;s inception to completion, with no exceptions.</p>
+<p>A fantastic tool that can be used to create consistency is the user persona. These simple documents personify the users of a system, and can even be printed and distributed as a constant reminder of the message, the goals, the users, and the emotional tone of a project. Aarron Walter, author of <em><a href="http://www.abookapart.com/products/designing-for-emotion">Designing For Emotion</a></em>, offers a <a href="http://aarronwalter.com/design-personas/">fantastic template for design personas</a> to help begin this process.</p>
+<p>Furthermore, I go so far as to print these personas out. I affix them to the walls near the team I&#8217;m working with, and I tell everyone to look at them every single day. With every feature and component that we build, we should look to the personas and ask ourselves, &#8220;Does this fit the emotional tone of the project?&#8221; &#8220;Does this fit our users?&#8221; These are important questions to ask, and all too easy to forget.<em><br />
+</em></p>
+<h3>Communicating Clearly</h3>
+<p>Users often visit websites in search of something. Search engines help make this process easier, but once the user has stepped off of Google&#8217;s digital subway and landed on your website platform, it&#8217;s up to you to guide them to the content they&#8217;re seeking. I often consider myself an electronic usher of sorts. As such, I do the things an usher would do. &#8220;Why are you here?&#8221; I ask. &#8220;Right this way,&#8221; I say. That&#8217;s how users should feel: ushered. There should be no <em>options</em> when using an interface. You&#8217;re here to make decisions for your users, and you should exercise that power frequently. As Steve Krug has famously stated in his book, <em><a href="http://www.sensible.com/dmmt.html">Don&#8217;t Make Me Think</a></em>:</p>
+<blockquote><p>&#8230;as far as is humanly possible, when I look at a Web page it should be self-evident. Obvious. Self-explanatory. I should be able to &#8220;get it&#8221; &#8212; what it is and how to use it &#8212; without expending any effort thinking about it.</p></blockquote>
+<p>Be an usher. Any time you feel you&#8217;re giving users <em>options</em>, stop and think about it. Is there a better way to do this that doesn&#8217;t present users with a choice? Less is more: don&#8217;t complicate things. Don&#8217;t make your users think about it.</p>
+<h3>Eliminating Frustration</h3>
+<p>Frustration is the downfall of many an otherwise great design. The tiniest thing can drive users absolutely crazy. For me, any time I see a message that tells me &#8220;please don&#8217;t use the back button in your browser,&#8221; I am immediately turned off. Why is it my responsibility to control my browser in a certain way? As a user, I do a few things, and I do them all the time. I click. I scroll. I go back. I go forward. These are the sacred functions of the web browser that you simply don&#8217;t interfere with. Ever.</p>
+<p>Any time a user has problems with technology, we often chalk it up to the myth of &#8220;user error.&#8221; In almost every case, however, the &#8220;error&#8221; is a result of disorganized content, poor communication, or a lack of consistency. Eliminating these <a href="http://kyleschaeffer.com/user-experience/10-things-a-website-should-never-ever-do/">common sources of frustration</a> can go a long way toward creating great user experiences. Most of the time, however, it falls to simple common sense. Don&#8217;t create challenges for your users, create solutions. That sounds exceedingly obvious and simple, but it&#8217;s very easy to lose sight of.</p>
+<p>Our angry customer in the store was wrong from the very beginning. He was wrong when he made his choice of purchase; obviously, it wasn&#8217;t the right product for him. He was wrong when he decided to storm into the store with a negative and combative tone. He was wrong when he assumed the store&#8217;s return policy didn&#8217;t apply to him. He was wrong about so many things, but in the end, he was right. He was right because it was <em>our</em> store. All of the negative emotion this customer was feeling was a direct result of his experience in our store, and that experience is our responsibility. No matter how crazy it might seem, providing a good user experience is about making the user right. All the time.</p>
+<p>You&#8217;ll never please everyone. It&#8217;s impossible for any one team or any one designer to think of every possible frustration a user could encounter. If you at least acknowledge those frustrations, however, and if you create good user experiences, you&#8217;ll find that frustrated users are much harder to come by. In the end, it&#8217;s not about the product, the website, the system, or even the design. It&#8217;s about the little things. It&#8217;s about the emotion attached to it all. If you focus on that, you&#8217;ll make your users happy. You&#8217;ll make them right.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/user-experience/the-user-is-never-wrong/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>SharePoint Fest Chicago</title>
+		<link>http://kyleschaeffer.com/events/sharepoint-fest-chicago/</link>
+		<comments>http://kyleschaeffer.com/events/sharepoint-fest-chicago/#comments</comments>
+		<pubDate>Fri, 28 Sep 2012 14:45:22 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[SharePoint]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1135</guid>
+		<description><![CDATA[This week at SharePoint Fest Chicago, I was honored to be speaking alongside the likes of Marc Anderson and many other talented and intelligent thought leaders in the SharePoint community. My slides and resources from my sessions are posted below for anyone &#8230; <a href="http://kyleschaeffer.com/events/sharepoint-fest-chicago/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>This week at <a href="http://www.sharepointfest.com/portal/">SharePoint Fest</a> Chicago, I was honored to be speaking alongside the likes of <a href="http://sympmarc.com/">Marc Anderson</a> and many other talented and intelligent thought leaders in the SharePoint community.<span id="more-1135"></span> My slides and resources from my sessions are posted below for anyone who attended, or for anyone who might be interested in the topic of SharePoint design.</p>
+<ul>
+<li><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/SharePoint-Design-Essentials.pdf">SharePoint Design Essentials Workshop</a> (PDF, 3.0 MB)</li>
+<li><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/Responsive-Design-in-SharePoint-Mobile-and-Beyond.pdf">Responsive Design in SharePoint: Mobile &amp; Beyond</a> (PDF, 1.3 MB)</li>
+<li><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/The-Big-Picture-SharePoint-Design-Strategy.pdf">The Big Picture: SharePoint Design Strategy</a> (PDF, 2.2 MB)</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/events/sharepoint-fest-chicago/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Public SharePoint Websites</title>
+		<link>http://kyleschaeffer.com/events/public-sharepoint-websites/</link>
+		<comments>http://kyleschaeffer.com/events/public-sharepoint-websites/#comments</comments>
+		<pubDate>Mon, 23 Jul 2012 23:18:55 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[SharePoint]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1122</guid>
+		<description><![CDATA[I had the pleasure of doing a great workshop with Paul Swider yesterday at SPTechCon. In this end-to-end workshop, we discussed strategy, processes, and implementation techniques for building a public-facing SharePoint publishing site. Paul had some great insight on architecture &#8230; <a href="http://kyleschaeffer.com/events/public-sharepoint-websites/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>I had the pleasure of doing a great workshop with <a href="http://paulswider.com">Paul Swider</a> yesterday at <a href="http://www.sptechcon.com/boston2012/">SPTechCon</a>. In this end-to-end workshop, we discussed strategy, processes, and implementation techniques for building a public-facing SharePoint publishing site. Paul had some great insight on architecture and strategy, while I detailed the journey from idea to Photoshop to SharePoint, with a few tips and tricks along the way. The end result was a fictitious digital bakery, built on the able shoulders of SharePoint 2010.<span id="more-1122"></span></p>
+<p>&nbsp;</p>
+<p><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/SugarPoint.png"><img class="alignnone size-large wp-image-1123" title="SugarPoint" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/SugarPoint-739x800.png" alt="" width="640" height="692" /></a></p>
+<p>You can read all about the workshop, view our slides, and even download the source code for the final master page in all its imaginary glory <a href="http://paulswider.com/2012/07/22/building-a-web-site-with-sharepoint/">on Paul&#8217;s blog post, here</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/events/public-sharepoint-websites/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Design Patterns in SharePoint</title>
+		<link>http://kyleschaeffer.com/sharepoint/design-patterns/</link>
+		<comments>http://kyleschaeffer.com/sharepoint/design-patterns/#comments</comments>
+		<pubDate>Thu, 26 Jan 2012 03:32:40 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[SharePoint]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Patterns]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1108</guid>
+		<description><![CDATA[Last week, I was happy to present at SusQtech&#8217;s &#8220;30 on Thursdays&#8221; weekly webinar event.  This is a great series of free webinars from some talented speakers, and the succinct format is a great opportunity to learn something new without &#8230; <a href="http://kyleschaeffer.com/sharepoint/design-patterns/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Last week, I was happy to present at SusQtech&#8217;s &#8220;<a href="http://www.susqtech.com/webinars">30 on Thursdays</a>&#8221; weekly webinar event.  This is a great series of free webinars from some talented speakers, and the succinct format is a great opportunity to learn something new without a huge investment of your time.<span id="more-1108"></span></p>
+<p>My topic was <em>Design Patterns in SharePoint</em>, which is an introduction to the concept of design patterns, and how to apply them to your SharePoint environment.  Luck you, we have been recording these webinars, and they&#8217;re freely available on our website. Feel free to view the webinar video below, and check out the <a href="http://www.susqtech.com/Webinars/Pages/Archived-Webinars.aspx">webinar archive</a> for any and all webinars that we&#8217;ve recorded in the past.</p>
+<p>As mentioned in the video, I will be teaching a <a href="http://www.susqtech.com/training/classes/Pages/SharePoint-Styling-Branding-March-22-23-2012.aspx">SharePoint design class in the Netherlands starting on March 22</a>.  If you are looking for design training and can make it to the class, please feel free to sign up.</p>
+<iframe src="http://www.youtube.com/embed/ud-KuCao_sY?version=3&amp;wmode=transparent" width="560" height="340" style="background-color:#000;display:block;margin-bottom:0;max-width:100%;" title="YouTube video player" frameborder="0" allowfullscreen></iframe><p style="font-size:11px;margin-top:0;"><a href="http://www.youtube.com/watch?v=ud-KuCao_sY" target="_blank" title="Watch on YouTube">Watch this video on YouTube</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/sharepoint/design-patterns/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>HTML5, CSS3, and Mobile Strategy</title>
+		<link>http://kyleschaeffer.com/events/html5-css3-mobile-strategy/</link>
+		<comments>http://kyleschaeffer.com/events/html5-css3-mobile-strategy/#comments</comments>
+		<pubDate>Mon, 09 Jan 2012 16:48:25 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[SharePoint]]></category>
+		<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1100</guid>
+		<description><![CDATA[I had the pleasure of speaking at SharePoint Saturday Virginia Beach this weekend. Thanks for all who attended; I had a great time speaking on some exciting new topics, and sharing my passion for design in SharePoint. For those of &#8230; <a href="http://kyleschaeffer.com/events/html5-css3-mobile-strategy/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>I had the pleasure of speaking at <a href="http://www.sharepointsaturday.org/virginiabeach/">SharePoint Saturday Virginia Beach</a> this weekend. Thanks for all who attended; I had a great time speaking on some exciting new topics, and sharing my passion for design in SharePoint.<span id="more-1100"></span> For those of you who were at the seminar, and also for those who might be interested, I wanted to share my presentations on my two sessions: <strong>HTML5 &amp; CSS3: What About SharePoint?</strong> and <strong>SharePoint Goes Mobile</strong>. You can view or download the presentations in PDF format here:</p>
+<ul>
+<li><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/HTML5-and-CSS3-What-About-SharePoint.pdf">HTML5-and-CSS3-What-About-SharePoint.pdf</a> (968 KB)</li>
+<li><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/SharePoint-Goes-Mobile.pdf">SharePoint-Goes-Mobile.pdf</a> (1.4 MB)</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/events/html5-css3-mobile-strategy/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Join me for Advanced SharePoint Design</title>
+		<link>http://kyleschaeffer.com/events/advanced-sharepoint-design-class/</link>
+		<comments>http://kyleschaeffer.com/events/advanced-sharepoint-design-class/#comments</comments>
+		<pubDate>Wed, 30 Nov 2011 14:40:23 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[SharePoint]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1093</guid>
+		<description><![CDATA[On January 23-26, 2012, I&#8217;ll be instructing a class that focuses on the more advanced strategies behind applying style and branding to a SharePoint 2010 website. This isn&#8217;t your average SharePoint training class: we&#8217;ll cover topics like improving the SharePoint &#8230; <a href="http://kyleschaeffer.com/events/advanced-sharepoint-design-class/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>On January 23-26, 2012, I&#8217;ll be instructing a class that focuses on the more advanced strategies behind applying style and branding to a SharePoint 2010 website. This isn&#8217;t your average SharePoint training class: we&#8217;ll cover topics like improving the SharePoint user experience, creative design for the SharePoint platform, and implementation strategy for making your creative designs come to life.<span id="more-1093"></span> Over four days, we&#8217;ll learn how to bend the rules in SharePoint to make it a truly limitless platform for customization.</p>
+<p>I&#8217;ve been working with SharePoint for a long time now, and going beyond the basics is a challenging barrier to overcome. Many of the free online resources pertaining to SharePoint customization (and many of the paid ones) only cover the most simple of changes that you can make to your design. Learning how to implement a more comprehensive design is difficult, to say the least. In this new class, we are taking these advanced techniques head-on, and we&#8217;ll show you how to implement awesome changes like responsive layouts, comprehensive themes, and amazing enhancements using jQuery.</p>
+<p>At least some experience with SharePoint customization, HTML, CSS, and JavaScript are highly recommended: we&#8217;ll be diving head-on into the world of SharePoint design. For more information, you can read all about the upcoming class here:</p>
+<p><a href="http://susqtech.com/training/classes/Pages/SharePoint-Designer-2010-Styling-and-Branding-Training.aspx">http://susqtech.com/training/classes/Pages/SharePoint-Designer-2010-Styling-and-Branding-Training.aspx</a></p>
+<p>&nbsp;</p>
+<h2>SharePoint Saturday: Virginia Beach</h2>
+<p>Can&#8217;t make it to the class in January? You&#8217;ll also see me speaking at the free SharePoint Saturday event at Virginia Beach on January 7, 2012.  I&#8217;ll be doing two sessions at this event: &#8220;SharePoint Goes Mobile&#8221; and &#8220;HTML5 &amp; CSS3: What about SharePoint?&#8221;</p>
+<p><a href="http://sharepointsaturday.org/virginiabeach/">http://sharepointsaturday.org/virginiabeach/</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/events/advanced-sharepoint-design-class/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>v5, the Responsive HTML5 Master Page for SharePoint 2010</title>
+		<link>http://kyleschaeffer.com/sharepoint/v5-responsive-html5-master-page/</link>
+		<comments>http://kyleschaeffer.com/sharepoint/v5-responsive-html5-master-page/#comments</comments>
+		<pubDate>Mon, 03 Oct 2011 20:25:49 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[Mobile]]></category>
+		<category><![CDATA[SharePoint]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=1067</guid>
+		<description><![CDATA[&#8220;v5.master&#8221; is a simple HTML5 master page designed for SharePoint 2010. It makes good use of the amazing new features of both HTML5 and CSS3, including CSS3 media queries. The master page is extremely simplistic in nature, and is truly &#8230; <a href="http://kyleschaeffer.com/sharepoint/v5-responsive-html5-master-page/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>&#8220;v5.master&#8221; is a simple HTML5 master page designed for SharePoint 2010. It makes good use of the amazing new features of both HTML5 and CSS3, including <a href="http://kyleschaeffer.com/best-practices/responsive-layouts-using-css-media-queries/">CSS3 media queries</a>. The master page is extremely simplistic in nature, and is truly meant to serve as a framework for building your own SharePoint 2010 customizations.<span id="more-1067"></span></p>
+<h2>SharePoint Gets Responsive</h2>
+<p>SharePoint has a knack for being rigid and difficult to customize. I&#8217;ve been working with responsive layouts for a while now, but the nature of SharePoint has thus far prevented me from making something that is as flexible as, say, this WordPress blog you&#8217;re reading right now. It&#8217;s easy-peasy to do this in WordPress, but SharePoint simply does <em>too much</em>. When you create a layout in SharePoint, you&#8217;re creating a layout that encompasses much more than just pages: you&#8217;ll have to contend with pages, web parts, lists, libraries, blogs, wikis, search, meeting workspaces, team sites, calendars, and the list goes on. With so much content to contend with, creating something that can contract to any width is a tall order to say the least.</p>
+<p>To me, at least, the answer was simple: ignorance. I&#8217;m ignoring every part of SharePoint that I don&#8217;t care about. 90% of the sites that I create in SharePoint are publishing sites: public-facing with a focus on pages, navigation, and web parts. Now, that&#8217;s a list I can handle. The v5 master page uses a fluid layout that drops to a single column when the display size shrinks below 800 pixels in width. Check out the screens to see the flexibility in action:</p>
+<p><strong>Large/Desktop Displays:<br />
+</strong><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-large.jpg"><img class="alignnone size-medium wp-image-1069" title="v5 on Laptops/Desktops" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-large-300x200.jpg" alt="" width="300" height="200" /></a></p>
+<p><strong>Medium/Tablet Displays:<br />
+<a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-medium.jpg"><img class="alignnone size-medium wp-image-1070" title="v5 on Tablets" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-medium-254x300.jpg" alt="" width="254" height="300" /></a> </strong></p>
+<p><strong>Small/Mobile Displays:<br />
+<a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-small.jpg"><img class="alignnone size-medium wp-image-1071" title="v5 on Mobiles" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-small-139x300.jpg" alt="" width="139" height="300" /></a> </strong></p>
+<h2>Features</h2>
+<ul>
+<li>New HTML5 document type declaration</li>
+<li>Revised <code>&lt;head&gt;</code> content to adhere to new HTML5 standards and best practices</li>
+<li>New HTML5 semantic layout (<code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, etc.)</li>
+<li>Uses <a href="http://code.google.com/p/html5shim/">html5shim</a> for backwards-compatibility</li>
+<li>Responsive CSS3 media queries</li>
+</ul>
+<h2>Download v5.master</h2>
+<ul>
+<li><strong><a href="http://kyleschaeffer.com/wordpress/wp-content/uploads/v5-masterpage.zip">v5-masterpage.zip</a> </strong>(16kb)</li>
+</ul>
+<p>The v5 master page is provided completely free, released under the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a> license 3.0.</p>
+<p><strong>Update Oct 26, 2011:</strong> Dércia Silva has been kind enough to create a deployable solution package, as well as a Visual Studio template, if you&#8217;d rather automate the deployment of this master page and related files. See Dércia&#8217;s post <a href="http://www.broculos.net/en/article/sharepoint-2010-branding-responsive-html5-masterpage-sharepoint-2010">here</a>.</p>
+<h2>Installation</h2>
+<ol>
+<li>Copy the <strong>v5.master</strong> file into the <code>/_catalogs/masterpage/</code> folder of your SharePoint 2010 site collection.</li>
+<li>Copy the entire <strong>v5</strong> folder into the <code>/Style Library/</code> document library, located at the root of your site collection.</li>
+<li><strong>Check in, publish, and approve</strong> all copied files.</li>
+<li>Change your <strong>site and system master page</strong> to use the new file you created.</li>
+<li>Optionally change the <strong>site logo</strong> setting to use the new logo image located at <code>/Style Library/v5/i/v5.png</code>.</li>
+</ol>
+<h2>Requirements &amp; Assumptions</h2>
+<ul>
+<li>This master page was designed for SharePoint 2010, Enterprise and Standard versions.</li>
+<li>This master page was designed and tested for SharePoint publishing and wiki sites. No other site templates have been tested.</li>
+<li>Keep in mind that some SharePoint content simply doesn&#8217;t work well at smaller screen resolutions (lists with many columns, calendars, etc.). The focus is on external-facing sites with a lot of text- and image-based content.</li>
+<li>The SharePoint front-end server must have internet connectivity to access Google&#8217;s hosted version of <a href="http://code.google.com/p/html5shim/">html5shim</a>. If you do not have internet connectivity in your environment, download and use a local copy of this file.</li>
+</ul>
+<h2>Known Issues (Updated Jan 19, 2012)</h2>
+<p>A few people have encountered some issues with the v5 master page. Although I think the master page still works great (especially as a publishing master page), you may want to consider making these changes, depending on your SharePoint environment and how you choose to utilize the interface.</p>
+<ol>
+<li><strong>Error on &ldquo;Save&rdquo; in SharePoint dialogs (IE9)</strong> &mdash; this is caused by an error in Microsoft&rsquo;s internal JavaScript files. This easily remedied by simply not using v5 master page as your &ldquo;system&rdquo; master page. If use a lot of system pages in your SharePoint site, you may also try adding the following line of code to the <code>&lt;head&gt;</code> section of your master page:</p>
+<pre>&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;IE=8&quot;/&gt;</pre>
+<p>This <em>forces</em> newer versions of Internet Explorer to display in compatibility mode. Note that you&rsquo;ll also lose CSS3 and HTML5 functionality when you add this to the master page (everything works, but the site will look a little more bland in IE).</li>
+<li><strong>Ribbon not appearing at the top of the browser window</strong> &mdash; I&rsquo;ve had some mixed reports of this happening in Internet Explorer, but I think it&rsquo;s actually an indication that the paths to the attached CSS and JavaScript files are incorrect. If you are deploying v5 master to any site other than the ROOT site collection, make sure you update all references to these files where appropriate.</li>
+<li><strong>Scrollbars appearing in SharePoint dialogs (Chrome, Firefox, Safari)</strong> &mdash; this is actually a side-effect of my ribbon/scrolling fix for SharePoint. SharePoint dialogs are still entirely functional, but the positioning and sizing of them just gets a little weird in any non-IE browser. Again, the idea is that the master page is optimized for publishing sites, which don&rsquo;t make much use of these dialogs (if at all). If you have a lot of trouble with this, consider using a different system master page.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/sharepoint/v5-responsive-html5-master-page/feed/</wfw:commentRss>
+		<slash:comments>158</slash:comments>
+		</item>
+		<item>
+		<title>10 Things a Website Should Never, Ever Do</title>
+		<link>http://kyleschaeffer.com/user-experience/10-things-a-website-should-never-ever-do/</link>
+		<comments>http://kyleschaeffer.com/user-experience/10-things-a-website-should-never-ever-do/#comments</comments>
+		<pubDate>Thu, 22 Sep 2011 21:19:15 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[User Experience]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[Images]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[SharePoint]]></category>
+		<category><![CDATA[Web Browsers]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=994</guid>
+		<description><![CDATA[As a designer of the world wide web, you are armed with the power to amaze, enlighten, entice, and captivate. The web is an easel for your creative aspirations, and the content you design for is the foundation of your &#8230; <a href="http://kyleschaeffer.com/user-experience/10-things-a-website-should-never-ever-do/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>As a designer of the world wide web, you are armed with the power to amaze, enlighten, entice, and captivate. The web is an easel for your creative aspirations, and the content you design for is the foundation of your creativity. With so much power at the tips of your fingers, you also possess the ability to deter, annoy, anger, and infuriate. Your users are yours to command, their emotions yours to pluck like the strings of a harp.<span id="more-994"></span></p>
+<p>It&#8217;s the latter of these powers that we discuss today: your ability to destroy the desire for users to stay on your site. We&#8217;ll examine the causes of user strife on the web, and see clear examples of common mistakes that designers and developers all-too-often seem to make.</p>
+<h2>1. Never interfere with the ability to scroll</h2>
+<p>The browser window is a fairly simple application: an address/search bar, a few buttons, and a big window where users read, scroll, and click. Sure, most browsers have other bells and whistles, but it really boils down to these essential elements of the browsing experience. Rule number one: never, ever (ever, ever) interfere with these most basic features of the browser window.</p>
+<h3>Example: Microsoft SharePoint 2010</h3>
+<p><img class="alignright" title="Microsoft SharePoint 2010" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/sharepoint-2010.jpg" alt="Microsoft SharePoint 2010" width="300" height="175" />One of the most preposterous features of an interface that I&#8217;ve seen is SharePoint 2010&#8242;s new ribbon interface. The default SharePoint 2010 interface includes a simple CSS style that disables the scrollbar on the <code>&lt;body&gt;</code> element. Microsoft chooses to remedy this by adding a scrollbar to other division elements in the interface instead. This results in a fairly impressive &#8220;fixed&#8221; ribbon, but it has some infuriating side-effects.</p>
+<ul>
+<li>When a SharePoint 2010 page loads, users will not be able to scroll until all JavaScript has loaded.  On slow servers or on large pages, this can take up to 2-3 seconds, which can be quite infuriating.</li>
+<li>Some devices don&#8217;t execute the JavaScript in the expected fashion, resulting in the complete inability to scroll on mobile devices and tablets.</li>
+</ul>
+<h3>An easy solution</h3>
+<p>The truth is, creating a &#8220;fixed&#8221; element is a fairly simple CSS technique that has become extremely popular in the last few months. The complexity of Microsoft&#8217;s interface is it&#8217;s downfall. Always practice in simplicity, because fewer things can go wrong in the end. Build simple interfaces, and <em>never</em> disable the scroll bar. Do this, and you&#8217;ll know at least one person who doesn&#8217;t hate your guts.</p>
+<h2>2. Never allow form resubmissions</h2>
+<p>Forms are a fairly standard feature of the web. Users see them and use them all the time: to sign up, sign in, order, update, and the like. With so much familiarity, it&#8217;s a wonder that forms are one of the largest sources of frustration to users. Between data, validation, formatting, handling errors, and all the auxiliary things that seem to surround web forms, things can get pretty complex for designers and developers. All the while, you try to keep it simple for your users. It&#8217;s a tall order, to be sure, but there is at least one thing that you can do to help users stay calm.</p>
+<h3>Example: The Form Resubmission Prompt</h3>
+<p><img class="alignnone size-medium wp-image-1008" title="Form Resubmission" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/form-resubmission.jpg" alt="Form Resubmission" /></p>
+<p>This is Google Chrome&#8217;s form resubmission prompt. Most browsers have something very similar. This appears when users click on the &#8220;Back&#8221; and &#8220;Forward&#8221; buttons in the browser, or when they &#8220;Refresh&#8221; a page on which they have submitted a form. As web junkies, we might know what this means, but it has a more elusive meaning to your every-day internet users. Most of the time, you&#8217;ll find that users simply click the default option (in this case, &#8220;Continue&#8221;), which can lead to duplication of orders, data, requests, and all sorts of things that would be better off if avoided. Also, it&#8217;s just another annoying prompt that users encounter while they&#8217;re using your site.</p>
+<h3>A Simple Solution</h3>
+<p>The solution to form resubmissions really depends on the platform your website runs on. In most cases, a simple fix is to separate the script that submits the form data, and the script that receives and processes that data. For example, if you&#8217;re using a PHP-based platform, you might have a form that looks like this:</p>
+<pre>&lt;form action="submit.php"&gt;
+  &lt;input type="text" name="user" required /&gt;
+  &lt;input type="password" name="pass" required /&gt;
+  &lt;input type="submit" value="Log in" /&gt;
+&lt;/form&gt;</pre>
+<p>To avoid the resubmission prompt, your <code>submit.php</code> script would <strong>forward</strong> to another page, rather than displaying a page in the browser.</p>
+<pre>if(isset($_POST['user']) &amp;&amp; isset($_POST['pass'])){
+  // do something with the form data
+  <strong>header('Location:/login/form.php?success=true');</strong>
+}</pre>
+<p>This receiving script never actually displays anything in the browser window. Instead, it receives the form data, does something with it, and then forwards the user somewhere else. Using this technique, when users click on the &#8220;Back&#8221; or &#8220;Forward&#8221; button, the browser will skip the <code>submit.php</code> page completely, and never see the annoying form resubmission prompt.</p>
+<h2>3. Never disable keyboard support</h2>
+<p><img class="alignright size-full wp-image-1009" title="Sprint Sign-In" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/sprint-sign-in.jpg" alt="Sprint Sign-In" width="179" height="357" />While we&#8217;re on the topic of forms, let&#8217;s look at another deviation from web standards you&#8217;ll want to avoid. To the right, you&#8217;ll see a screenshot of the login form at <a href="http://mysprint.sprint.com">mysprint.sprint.com</a>. I have a Sprint mobile phone, and I occasionally use this login form to sign in and review my account, see my bill, or (more commonly) daydream about all the fancy new mobile phones that I don&#8217;t have.</p>
+<h3>What went wrong</h3>
+<p>The font sizes are a little small for my taste, but the appearance of this form is not the worst I&#8217;ve seen (yes, that was a compliment). Design and aesthetics aside, there&#8217;s one feature of this form that drives me absolutely crazy. It&#8217;s an extremely simple form, one that I&#8217;ve encountered on countless other websites before. As usual, I would expect to enter my username and password to sign in without a fuss.</p>
+<p>Unfortunately, this is not the case. While focusing in either the username or password textbox, pressing the ENTER key does absolutely nothing. I&#8217;m not the type of user that wastes time after filling out a form by lifting my hand from the keyboard and finding the submit button with my mouse cursor. I&#8217;m all about speed: on most websites, it&#8217;s type, type, ENTER, and the form has been submitted. On Sprint&#8217;s website, however, they&#8217;ve removed this behavior, and thus they&#8217;ve earned a place on my list of don&#8217;t-do&#8217;s.</p>
+<h2>4. Never fail to give feedback</h2>
+<p><img class="alignright size-full wp-image-1016" title="Facebook - Add Favorite" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/facebook-add-favorites.jpg" alt="Facebook - Add Favorite" width="201" height="344" />Feedback is important, especially if you&#8217;re working with the awesomeness of AJAX. Traditionally, you knew what was going on in a web page, because any time you clicked on something, you had to wait while the next page loaded. There was a very apparent interaction period, and very obvious feedback from that interaction. With the introduction of new technology like AJAX, however, that feedback is not always so obvious. Today&#8217;s websites are much more interactive, and the result of those interactions (whether successful or not) needs to be communicated to the user.</p>
+<h3>Example: Facebook</h3>
+<p>There&#8217;s an easy way to test this: visit a web page, turn off your wireless adapter, and then click on things and see what happens. Obviously, because you&#8217;re not online, anything you do should be very obviously followed by a &#8220;no connection&#8221; message or some sort of indication that you&#8217;ve failed to do something. Facebook, a website that makes gratuitous use of AJAX for interaction, is not so good about warning users when things have failed.</p>
+<p><strong>Editor&#8217;s note:</strong> yes, I am using pirate Facebook.</p>
+<p>One particular example is the new &#8220;lists&#8221; feature that allows you to mark a list as &#8220;favorite.&#8221; Even when you&#8217;re offline, Facebook gives you no indication that the action has failed. Never assume that users will have a fast connection, or that AJAX requests will complete. You should always provide feedback if something fails, especially when no page loads are involved.</p>
+<h2>5. Never disable keyboard navigation</h2>
+<p>Different strokes for different folks. That&#8217;s a saying that I like to spew off at random times, usually in a failed attempt at humor, but the lesson of this silly quip is tried and true: everyone has their own way of doing things. This can also be applied to navigation on the internet. Some people prefer to use their cursor for absolutely everything, and only resort to keyboard use when absolutely necessary. Others use the keyboard almost entirely, tabbing, backspacing, and scrolling their way through the world of the world wide web. Others, still, use gestures and touch screens to flick and fly their way through the internet. As a crafter of the interactive, you must adhere to all of these people. Never detract from your users&#8217; ability to navigate in whatever way they damn well please.</p>
+<h3>Example: No, I don&#8217;t want to search</h3>
+<p><img class="alignright size-full wp-image-1027" title="eBay Auto-focus" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/ebay-search.jpg" alt="eBay Auto-focus" width="202" height="101" />I&#8217;m going to use eBay as an example, just because they&#8217;re so big, but many websites <em>out there</em> are guilty of this annoyance. Upon arriving at eBay&#8217;s website, they use JavaScript to auto-focus on the search bar. I guess they&#8217;ve already decided, before you even visit, that you want to search their website. For some users, however, this can be incredibly annoying. A common and simple way to scroll down the page, in all browsers, is to press the space key. Pressing this key will advance the screen about one page, so you can continue reading without having to worry about scroll bars and the like. If you&#8217;re auto-focused on a search box, however, it disables your ability to do this. Even if it&#8217;s only a minor annoyance, it can be incredibly frustrating to users who like to navigate in this fashion. Likewise, I often use the backspace key instead of the back button to go back when I didn&#8217;t find what I was looking for. With the focus on a search field, backspace navigation simply doesn&#8217;t work.</p>
+<p>The fix for this one is easy: don&#8217;t do it. It&#8217;s annoying.</p>
+<h2>6. Never move content without user interaction</h2>
+<p>Websites can be so damn sneaky. I guess they need to make a buck, but who doesn&#8217;t? One thing that will drive your users bonkers is anything that moves without a prompt from the user. Yes, I&#8217;m talking about you, &#8220;auto-expanding-advertisement-that-plays-a-stupid-video-of-a-guy-who-walks-across-my-screen-when-I-just-want-to-read-the-damn-article&#8221; guy. I also dislike anything that happens on hover (including drop-down menus). Hover is so 2000&#8242;s, get with the times, people. The only time your website should &#8220;move&#8221; or &#8220;do something&#8221; is when users tell it to. Most simply, any time they click, drag, or scroll. That sounds simple and obvious, but not everyone adheres to this most basic of principles.</p>
+<h3>Example: Digg.com</h3>
+<p><img class="alignnone size-full wp-image-1028" title="Digg Advertisement" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/digg-advertisement.jpg" alt="Digg Advertisement" width="600" height="300" /></p>
+<p>While the quality of Digg&#8217;s content is another concern, one thing that does drive me crazy is the sponsored links that appear in the rollup. Notice the promotion from NewEgg.com. This link does not actually appear on page load, but rather when users hover their mouse cursor into the rollup of popular stories. This means that if you&#8217;re a fast clicker (aren&#8217;t we all?), you will often accidentally click on the advertisement instead of the story you&#8217;re interested in. Good for Digg, bad for users. Stop being so shifty, internet.</p>
+<h2>7. Never use fixed position without a fallback</h2>
+<p>A &#8220;fixed&#8221; element in the browser window is one that stays on the screen, even as you scroll down the page. It&#8217;s a simple CSS technique, but it&#8217;s been amazingly popular in recent months. One thing I&#8217;ve noticed in all these fixed designs is the failure to provide a fallback for users who are on smaller screens. The truth of the matter is that the web isn&#8217;t just for desktops any more. Internet connectivity is coming in all sorts of shapes and sizes: desktops, laptops, mobiles, tablets, e-readers, gaming consoles, and even refrigerators (yes, even refrigerators). The future promises only more diversity in internet-connected devices, and that means you can&#8217;t assume users will have a large viewing area on which to see your website.</p>
+<h3>Example: Pandora.com</h3>
+<p><img class="alignright size-full wp-image-1035" title="Pandora Fixed" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/pandora-fixed-nav.jpg" alt="Pandora Fixed" width="403" height="269" />This is a screenshot of Pandora&#8217;s fancy new HTML5/CSS3 design. First of all, I&#8217;ll say that I love Pandora.  Maybe too much. It&#8217;s pretty awesome, and it even lets me give all of my radio stations quirky little names like &#8220;Harmonizatorasaurous&#8221; (eat that, spell-check).</p>
+<p>Pandora&#8217;s new design includes a fixed header, like many new designs, but it seems the header does not provide a fallback for users on a smaller screen. When reducing the window width, it clips the player controls off the edge of the screen. If a fixed element is clipped, users can&#8217;t see it, even if they try to scroll to see more, which can be a huge problem.</p>
+<h3>A simple solution</h3>
+<p>An easy solution to this problem is to make the default behavior of your site&#8217;s header to maintain a static position, but when users have a large enough screen, you can make things fixed for a more impressive presentation.  The following jQuery snippet does the trick quite nicely:</p>
+<pre>$(window).resize(function(){
+  resizeUI();
+}); 
+$(document).ready(function(){
+  resizeUI();
+});
+
+<strong>// resize on page load AND window resize</strong>
+<strong>function resizeUI(){</strong>
+<strong> if($(window).width() &gt; 500){</strong>
+<strong> $('#header').css('position', 'fixed');</strong>
+<strong> }</strong>
+<strong> else{</strong>
+<strong> $('#header').css('position', 'static');</strong>
+<strong> }</strong>
+<strong>} </strong></pre>
+<p>This script runs both on page load AND as users resize the window, so no matter what happens, you can decide whether or not to use fixed elements. You&#8217;ll have to mess with the values that the script looks at (width and height) to determine what works best for your site&#8217;s design, but it&#8217;s a useful technique to use.</p>
+<h2>8. Never use pop-up windows</h2>
+<p>Do I really even have to mention this one? I thought that pop-ups were notorious for the infuriating behavior that have on users, but I still see them &#8220;pop up&#8221; from time to time (pun <em>intended</em>).</p>
+<h3>Example: TinyMCE</h3>
+<p><img class="alignright size-full wp-image-1036" title="TinyMCE" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/tinymce.jpg" alt="TinyMCE" width="185" height="98" />I never use pop-ups. I always recommend against them. A common excuse is that <em>your</em> site should stay open, in it&#8217;s own tab, even if users click a link that takes them away from your site. I&#8217;ve got a simple response to that: wrong! Don&#8217;t let your head grow so big that you think your website is god&#8217;s gift to the internet. Users have gotten pretty comfortable with the idea of tabbed browsing, and they know how to manage their windows. Unless you&#8217;re Google, you&#8217;re not allowed to use pop-ups. It&#8217;s that simple.</p>
+<p>Imagine my surprise when I attempted to implement the TinyMCE JavaScript editor into a web application I was building, and realized it still used pop-up windows for things like links and images. I am building a PHP application, and I have had stars in my eyes for WordPress the entire time, so TinyMCE was the obvious choice. I was so taken aback by this behavior that I ended up switching to CKEditor, another popular editor that has recognized the need to rid the world of these annoying little boxes, and I&#8217;m all the happier for it.</p>
+<h2>9. Never get quirky (well, not <em>too</em> quirky)</h2>
+<p>I love websites that are different, but not <em>too</em> different. There&#8217;s a fine balance to be made between adhering to expectations, and getting so weird that users have no idea what&#8217;s going on. As with most users, if I visit a website and am prompted to &#8220;explore this insanely huge image of nonsense to learn how to navigate our site,&#8221; I&#8217;m going to leave and never return. I&#8217;ve never been a proponent of Flash, for this very reason, but I also recognize that it has it&#8217;s place. Flash can enhance a website&#8217;s content with some awesome features, but it should never be used to present content in its entirety.</p>
+<h3>Example: Sony.com</h3>
+<p><img class="alignright size-full wp-image-1038" title="Sony" src="http://kyleschaeffer.com/wordpress/wp-content/uploads/sony.jpg" alt="Sony" width="305" height="133" />Check out <a href="http://www.sony.com">Sony.com</a>, and you&#8217;ll realize that a full 5-8 seconds will go by before you actually see anything on the screen that you can click on. Almost the entire site is in Flash, and it breaks about five of the ten &#8220;don&#8217;t do&#8217;s&#8221; that I&#8217;ve described in this article. All that aside, Sony has provided a non-Flash version of their site, which also subsequently presents a loading spinner for about 2-3 seconds that covers all of the content on the page. I&#8217;m not entirely sure why the designer who created the Sony website was so fond of things that come between users and consuming the content they came to read, but I do know this: it&#8217;s annoying. Don&#8217;t do it.</p>
+<h2>10. Never do THIS&#8230;</h2>
+<p>Okay, this last one is really just for fun, but never do THIS&#8230;</p>
+<pre>body * {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body *:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}</pre>
+<p>Try it out by clicking on this button (you&#8217;ve been warned):</p>
+<p><input id="crazy-button" type="button" value="Let's get crazy" /><br />
+<script src="/wordpress/wp-content/themes/shakefive/js/crazy.js"></script></p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/user-experience/10-things-a-website-should-never-ever-do/feed/</wfw:commentRss>
+		<slash:comments>35</slash:comments>
+		</item>
+		<item>
+		<title>From &#8220;Developer&#8221; to &#8220;Designer&#8221;</title>
+		<link>http://kyleschaeffer.com/user-experience/from-developer-to-designer/</link>
+		<comments>http://kyleschaeffer.com/user-experience/from-developer-to-designer/#comments</comments>
+		<pubDate>Thu, 25 Aug 2011 16:34:16 +0000</pubDate>
+		<dc:creator>Kyle</dc:creator>
+				<category><![CDATA[User Experience]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Web Browsers]]></category>
+
+		<guid isPermaLink="false">http://kyleschaeffer.com/?p=964</guid>
+		<description><![CDATA[It&#8217;s easy to forget how a website really works. I mean really works. I&#8217;ve had the pleasure of working with many brilliant and talented developers (programmers) who could bend the functionality of any application or server-side platform at the drop &#8230; <a href="http://kyleschaeffer.com/user-experience/from-developer-to-designer/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>It&#8217;s easy to forget how a website really works. I mean <em>really works</em>. I&#8217;ve had the pleasure of working with many brilliant and talented developers (programmers) who could bend the functionality of any application or server-side platform at the drop of a hat. They are problem-solvers, as is everyone in this industry of the online.<span id="more-964"></span></p>
+<p>With most developers, I&#8217;ve found that there can be a disconnect between how I understand websites, and how they&#8217;ve come to understand them. Not just <em>a </em>disconnect: <em>The Disconnect</em>. If you work in a team environment, you know the feeling. I say &#8220;element,&#8221; and you say &#8220;control.&#8221; I say &#8220;script,&#8221; and you say &#8220;method.&#8221; Most developers are ultimately, completely, and entirely focused on the server-side application.</p>
+<p>That&#8217;s okay. I need my developers, and they need me. It&#8217;s a good relationship for all of us, with our complimentary skills, tools, and techniques. They make it work, and I make it look good.</p>
+<h2>How to Connect</h2>
+<p>Overcoming the <em>Disconnect</em> is all about education, on both sides of the fence. Developers and designers alike would benefit from understanding how the technology that they use comes together. The grand finale of everything that we do online ends up in a single place, where it can be seen, read, clicked, and tested: the browser window.</p>
+<p>As a designer, that&#8217;s where my beautiful designs will end up, and they somehow need to be translated from Photoshop into HTML and CSS that works well with the server-side application. Good designers understand the technology before they create the designs. Likewise, as developers, the controls and methods that you create are all somehow translated into HTML, whether you&#8217;ve recognized that or not. Understanding the output of what you do in the application is just as important as making the application work.</p>
+<h2>Don&#8217;t Forget the Browser</h2>
+<p>This is where it all ends up. Everything that we do as designers, developers, project managers, or architects: it all comes together in the browser window. The browser is the tool that is used to present all of your hard work, everything that you&#8217;ve done throughout an entire project. With so much responsibility resting upon the shoulders of the browser, why is it that so many people ignore it completely?</p>
+<p>Back in <em>The Day</em>, the browser is all there was. In 1989, Tim Berners-Lee created the world&#8217;s first web server. When requested, it <em>served</em> up documents to be viewed inside the very first web browser. These documents were pure HTML, and the browser interpreted that language in order to create Hyper-Text documents that could be <em>linked</em> together. As you probably know, this simple concept caught on, and by the mid 1990&#8242;s, the Internet had become arguably the most influential product of Man in the 20th century.</p>
+<p>Everyone that works in the industry of the world wide web should pay their respects to the oft-neglected browser. It has so much power, and it is the tool that allows us to do what we do. The browser is everything. The W3C and WHATWG can make all the recommendations they want: nothing really happens until browsers support it. In the mid 2000&#8242;s, the W3C started working on a recommendation called XHTML 2.0. It failed. The browser manufacturers didn&#8217;t like it, and that&#8217;s why we&#8217;re now working with HTML5 instead of XHTML2. Similarly, Microsoft created something called the XMLHTTPRequest in the early- to mid-2000&#8242;s, and everyone loved it. The major browsers quickly adopted this technology, and AJAX was born.</p>
+<p>The point is, the browser truly has the power in web application development. It doesn&#8217;t matter if you&#8217;re a programmer or a designer: you need to understand how technology works inside the confines of this little window. In all the amazing technology that surrounds the Internet, it&#8217;s really based on a few simple languages: HTML, CSS, and JavaScript.</p>
+<h2>Making Requests</h2>
+<p>Web browsers are fairly simple applications. In essence, they do two things: make requests, and handle responses. A request might be something like &#8220;show me the document at KyleSchaeffer.com,&#8221; or &#8220;give me the image at /images/kittens.jpg.&#8221; The server that you&#8217;re requesting from then responds and the browser does something with the response. It all sounds very simple, but it&#8217;s so easy to forget this fundamental layer of web technology. I&#8217;ve helped troubleshoot dozens of web applications, and my first question is always &#8220;What request is the browser making?&#8221;</p>
+<p>This entire process is called an <strong>HTTP request</strong>. HTTP requests are sent by your browser every time you type something into the address bar. The first requests is almost always an HTML document, and then the browser subsequently makes additional requests for things like CSS files, JavaScript, and images. Even if your web application is running on PHP or ASP.NET or SharePoint, the server is returning an HTML document, which subsequently loads additional resources. Simple, right?</p>
+<h3>1. The Request</h3>
+<p>Every HTTP request has a <strong>URI</strong>, or Uniform Resource Identifier. That&#8217;s a fancy way of saying the <em>address</em> of the resource you&#8217;re requesting. The address can be both absolute (<code>http://kyleschaeffer.com/images/kittens.jpg</code>) or relative (<code>/images/kittens.jpg</code>). The browser sends this request to the &#8220;Internet,&#8221; which routes the request to the appropriate server, somewhere <em>out there</em>. The browser then waits for a response.</p>
+<h3>2. The Response</h3>
+<p>After sending a request, the server that you requested the document from will send back a <em>response</em>. Again, the browser handles the responses, and each resource that is requested is handled differently. First of all, the browser reads the HTTP <strong>response code</strong>, which is an indication of the status of your request. The most common HTTP response codes are:</p>
+<ol>
+<li><strong>200 OK</strong> - The most common response; the resource you requested was found</li>
+<li><strong>301 Moved Permanently</strong> - The resources has moved, and the browser will redirect the request to the new location</li>
+<li><strong>304 Not Modified</strong> - The resource was found, and your browser already has the most recent version in the browser cache (yay!)</li>
+<li><strong>401 Unauthorized</strong> - You need to sign in to see this resource</li>
+<li><strong>403 Forbidden</strong> - You&#8217;re not allowed to see this</li>
+<li><strong>404 Not Found</strong> - The resource you requested does not exist</li>
+<li><strong>408 Request Time-Out</strong> - That took too long, sorry</li>
+<li><strong>500 Internal Server Error</strong> - Something went wrong!</li>
+</ol>
+<p>My descriptions of each response are less than technical, but you get the idea. If you&#8217;ve ever wondered what the &#8220;404&#8243; in &#8220;404 Not Found&#8221; meant, it&#8217;s the HTTP response code for &#8220;not found.&#8221; For a more comprehensive list of HTTP response codes, visit the <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html">W3C&#8217;s documentation</a>.</p>
+<p>Another important element of the HTTP response is the <strong>Content Type</strong>. This tells your browser how to handle the requested resource when it&#8217;s downloaded. Unlike on your computer, your browser does not decide how to use a resource based on it&#8217;s file extension! It&#8217;s all about the content type. Some of the more clever server-side programmers can actually utilize this element of the HTTP response to create server-side scripts that actually disguise themselves as other types of content (like a PHP script pretending to be JSON or XML).</p>
+<h3>3. Execution</h3>
+<p>At this point, the browser now knows the HTTP response code, and the resource content type. Using this information, it&#8217;s time to make something happen. The browser downloads the resource, and presents it inside the browser window. Browsers can sometimes handle resource requests differently, so this is where you get into the nuances of browser testing. One browser might handle HTML and CSS requests slightly different from another, so testing your applications is merely a practice of testing how these HTTP responses are handled.</p>
+<h2>From &#8220;Developer&#8221; to &#8220;Designer&#8221;</h2>
+<p>Bridging the divide between developers and designers is all about understanding how the different technologies of the web come together. The browser window is the one place where the user experience, the architecture, the design, the program, the database, and everything else that goes on behind the scenes comes to fruition and is finally presented. Clients pay for you to meet needs and requirements, but what they ultimately expect is something that appears inside the little box that they call the Internet. Embrace it, learn it, love it, know it inside and out, and you&#8217;ll find that disconnecting from <em>The Disconnect</em> is not so difficult after all.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://kyleschaeffer.com/user-experience/from-developer-to-designer/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic page generated in 0.293 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-07-13 06:36:44 -->

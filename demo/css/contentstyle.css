@@ -1,0 +1,109 @@
+/* @import url(http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+ @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/thabit.css);
+  @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);*/
+  @import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
+
+	body{
+		font-family: 'Amiri', serif;
+		color: rgb(76, 76, 76);
+		direction: rtl;
+		background: no-repeat url(../src/bg.png) 0 0;
+		background-color: rgb(245,246,245);
+		background-repeat: repeat;
+		padding: 1% 1%;
+		margin: 0;
+	}
+
+     #result{ 
+			
+	      margin:auto 5%;
+	      padding: 0px 10px 100px 10px;
+/*	      height:80%; */
+/*	      overflow: auto; */
+      }  
+
+     #linksrc{
+     	font-size: 1.0em;
+     	color: #3399FF;
+     	letter-spacing: .1em;
+     	text-decoration: none;
+     	line-height: 1.7em;
+     	padding: 5px 0;
+     	text-shadow: 1px 1px 1px #ccc;
+     }
+     
+     p{
+     	vvertical-align: text-top;
+     	font-size: 1.4em;
+     	letter-spacing: .05em;
+     	text-decoration: none;
+     	display: block;
+     	line-height: 2em;
+     	text-shadow: 1px 1px #fff;
+     	margin: 0;
+        }
+     p > br
+     {
+     	margin: 5px;
+     }
+     
+     h1{
+     	vertical-align: text-top;
+     	font-size: 2em;
+     	text-shadow: 1px 1px #fff;
+     	letter-spacing: 2;
+     } 		
+
+	 #result > img, #result > iframe
+	   {
+	    float: right;
+	   	border: none;
+	   	vertical-align: middle;
+	   	max-width:400px;
+	    border: 5px solid #fff;
+	   	-webkit-border-radius: 2px;
+	   	margin-left: 10px;
+	   
+	   } 
+	   
+	 #video iframe
+	  {
+	  	border: none;
+	  	vertical-align: middle;
+	  	border: 5px solid #fff;
+	  	-webkit-border-radius: 2px;
+	  	margin-left: 10px;
+	  	margin-bottom: 50px;
+	  } 
+	 
+	 
+	   
+	 #date{
+			font-size:.8em;
+	 	 }
+	 #slides img
+	 {
+	 	max-height: 20%;
+	 	margin: 2px;
+	 }
+
+
+.item-button{
+	letter-spacing: 1px;
+	padding: 10px 20px;
+/*	background: #eee;*/
+	margin: 5px 5px 20px 5px;
+	border: .08em solid rgb(196, 196, 196);
+}
+
+.item-button.right{
+	float: right;
+}
+.item-button.left{
+	float: left;
+}
+
+span.item-button:focus{
+	background-color: #2f2ffa;
+}

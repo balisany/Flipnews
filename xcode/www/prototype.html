@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    	 <link href="css/contentstyle.css" rel="stylesheet">
+             <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    
+             <style>
+
+                 span#back{
+                     display:block;
+                 }
+                 #ajax-panel
+                 {
+                     float:right;
+                     margin-top:-30px;
+                 }
+                 
+                 img
+                 {
+                     border-radius:0;
+                 }
+                 
+                 .image {
+                     position: relative;
+                     width: 100%; /* for IE 6 */
+                     margin-bottom: 7px;
+                     box-shadow: 0px 4px 3px #888;
+                     height:200px;
+                     padding-bottom:10px;
+                     background: rgb(0, 0, 0); /* fallback color */
+                     background: rgba(0, 0, 0, 0.6);
+                 }
+                 
+                 h2 {
+                     position: absolute;
+                     top: 25%;
+                     left: 0;
+                     width: 100%;
+                 }
+                 
+                 h2 span {
+                     color: white;
+                     font-size:.8em;
+                     letter-spacing: 0px;
+                     background: rgb(0, 0, 0); /* fallback color */
+                     background: rgba(0, 0, 0, 0.6);
+                     padding: 10px 20px;
+                     line-height: 43px;
+                 }
+                 
+                 h2 span.spacer {
+                     padding:0 5px;
+                 }
+                 
+                 .image.left img{
+                     max-height: 100%;
+                     width: 50%;
+                     height:101px;
+                     float: left;
+                 }
+                 
+                 .image.left h2{
+                     width: 60%;
+                     right: 0;
+                     margin-top: 0px;
+                     top: 0;
+                     font-size: 1.2em;
+                 }
+                 
+                 
+                 .image.right img{
+                     max-height: 100%;
+                     width: 50%;
+                     float: right;
+				 }
+                 
+                 .image.right h2{
+                     width: 50%;
+                     left: 0;
+                     margin-top: 0px;
+                     top: 0;
+                     font-size: 1.2em;
+                 }
+                 
+                 .image.left h2 span, .image.right h2 span{
+                     line-height: 38px;
+                 }
+                 
+                 .image.left, .image.right{
+                     height: 100px;
+                     padding: 0;
+                 }
+                 
+                 </style>
+             
+             <script src="js/jquery.min.js"></script>
+             </head>
+    <body>
+        <div class="main">
+             <span class="item-button" style="width:40px;" id="back">back</span>
+            <div class="image">
+                
+                <img src="src/a.png" alt="" />
+                
+                <a href="demo.html"><h2><span>بڕیاره‌ ئۆپۆزسیۆنی‌ سوریا له‌گه‌ڵ ئه‌ندامانی‌ ئه‌نجومه‌نی ئاسایشی نێوده‌وڵه‌تی كۆببێته‌وه‌ </span></h2></a>
+            </div>
+            
+            
+            <div class="image left">
+                
+                <img src="src/b.jpg" alt="" />
+                
+               <a href="test.html"> <h2><span> بەڤیدیۆ: لاسایی لیژنەی “ئەرەب ئایدڵ”</span></h2> </a>
+                
+            </div>
+            
+            <div class="image right">
+                
+                <img src="src/c.jpeg" alt="" />
+                
+                <h2><span>ئاراس ده‌وڵه‌تی كوردی ڕاده‌گه‌یه‌نێت </span></h2>
+                
+            </div>
+            
+            <div class="image">
+                
+                <img src="src/d.jpg" alt="" />
+                
+                <h2><span>Eide ringte Marte i Dubai</span></h2>
+                
+            </div>
+            
+            
+        </div>
+        
+        
+	</body>
+	
+    </script>
+    <script>
+        
+        $('div').hide();
+        $('div').each(function(){
+                      $(this).fadeIn(1500);
+                      });
+        
+          $('#back').click(function(){
+                           history.go(-1);
+                           });
+          </script>
+</html>

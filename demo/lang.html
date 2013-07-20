@@ -1,170 +1,76 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-	<link href="css/style.css" rel="stylesheet">  
-	<script src="js/json2.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jstorage.js"></script>
-	<!--<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js"></script>
-	<script src="http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.slide.js"></script>-->
-	
-	
-	
-<style>
-
-
-	#main{
-		border: 1px solid #fff;
-		margin: auto;
-		width: 360px;
-	}
-		
-</style>
-
-</head>
-    <body cz-shortcut-listen="true">
-        <div id="main">
-        	<span id="back">back</span><span id="done">done</span>
-        <div class="add-items" id="cat-creation">
-            <span id="msg"></span>
-        
-        	<ul id="langs"> 
-        		<li class="item" id="kurdi">Kurdi</li>
-        		<li class="item" id="arabic">Arabic</li>
-             	<li class="item" id="turkish">Turkish</li>
-             	<li class="item" id="farsi">Farsi</li>
-        	</ul >
-        	
-        	
-        	<ul id="kurdi">
-        		<li class="items" id="hawlati">Hawlati </li>
-        		<li class="items" id="awene">Awene</li>
-        		<li class="items" id="rudaw">Rudaw</li>
-        	</ul>
-        	
-        	<ul id="arabic">
-        		<li class="items" id="khabar">Al khabar </li>
-        		<li class="items" id="zaman">Zaman</li>
-        		<li class="items" id="arabia">Al arabiya</li>
-        	</ul>
-        	
-        	<ul id="turkish">
-        		<li class="items" id="cnn">CNN</li>
-        		<li class="items" id="huriet">Huriet</li>
-        		<li class="items" id="haber">Habar</li>
-        	</ul>
-        	
-        	<ul id="farsi">
-        			<li class="items" id="azadi">Azadi</li>
-        			<li class="items" id="irani">Irani</li>
-        			<li class="items" id="tehran">Tehran</li>
-        	</ul>	
-		
-        </div>
-	</div>
-	
-    </body>
-    <script>
-    	// history.go(-1);
-    	
-
-//               $.get("lang.html",
-//                     function(data) {
-//                     alert(data.navn);
-//                     });
-
-
-    	
-    	var arrid = [];
-       	var bb = [];
-        
-    	
-    	$(document).ready(function () {
-    		var str = $.jStorage.get("cat-arbic");
-    		
-    		var arr = str.split(" ");
-    		arr2 = arr.filter(
-    		                 function(a){if (!this[a]) {this[a] = 1; return a;}},
-    		                 {}
-    		                );
-    		
-    		//arr = jQuery.unique(arr);
-    		
-    		  		$(arr).each(function() {
-    						$("#"+this).css("background-color","rgb(190, 255, 240)");
-    				});
-    			arrid = $.merge(arrid,arr);
-    			
-    	
-    	    $('.items').click(function () {
-    	          var id = $(this).attr('id');
-    	        
-    	        
-    	    var index= $.inArray(id, arrid);
-    	    if(index== -1)
-    	       {
-    	         arrid.push(id);
-    	       }
-    	    else
-    	       {
-    	       	arrid=arrid.filter(
-    	       	             function(a){if (!this[a]) {this[a] = 1; return a;}},
-    	       	             {}
-    	       	            );
-    	         arrid.splice(index,1);
-    	       }
- 			    bb= arrid.filter(function(a){
-			    	if (!this[a]) 
-			    	{
-			    		this[a] = 1; 
-			    		return a;
-			    	}
-			    	},{});
-    	         $('.items').css("background-color","white");
-    	         $(bb).each(function() {
-    	        	$("#"+this).css("background-color","rgb(190, 255, 240)");
-    	        	
-    	         });
-    	      });
-    	      
-    	      
-		  });
-    	
-    	$('#done-lang').click(function() {
-    		bb = bb.filter(function(a){
-    			if (!this[a]) 
-    			{
-    				this[a] = 1; 
-    				return a;
-    			}
-    			},{});
-    			
-			var def ="";
-    		$(bb).each(function() {
-    			def +=this + " ";
-    		});
-    		$.jStorage.set("cat-arbic",def);
-            $("ul").hide();
-            $("ul#langs").fadeIn();
-            $('#back-front').show();
-                    
-    	});
-    	
-    	
-		$("ul").hide();
-		$("ul#langs").fadeIn();
-		$(".item").click(function() {
-			var id = $(this).attr('id');
-			$("ul#langs").hide();
-            //$('#back').hide();
-			$('ul#'+id).show();
-                         
-		});
-
-        
-		    </script>
+    <head>
+    	 <link href="css/contentstyle.css" rel="stylesheet">
+             <link rel="stylesheet" type="text/css" href="css/stylea.css" />
     
-    </html>
+    
+             <style>
+                 span#back{
+                     display:block;
+                 }
+                 #ajax-panel
+                 {
+                     float:right;
+                     margin-top:-30px;
+                 }
+                 </style>
+             
+     <script src="" type="text/javascript">
+     </script>
+           </head>
+    <body>
+        <span class="item-button left" id="back">back</span>
+    	<div id='result'></div>
+        <div id='container'></div>
+    </body>
+  <script src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/script.js"></script>
+    	<script type="text/javascript">
+    	var kurdishsrc ='&#1587;&#1607;&#8204;&#1585;&#1670;&#1575;&#1608;&#1607;&#8204;';
+    
+        		requestCrossDomain('http://rudaw.net/sorani/kurdistan/1807201334','//div[@class=\'mainColumn\']', function(results) {  
+        			   $('#container').html(results);
+        			   $('.commentsHolder.margBot20').remove();
+        			   $('.subPageSecondCol').remove();
+        			   $('.subPageSecondCol').remove();
+        			   $('.specialContent .question').remove();
+       				   $('#result').append('<h1>'+$(".articleTitle").text()+'</h1>');
+       				   $('#result').append('<span id="date">'+$('span.newsDate').text()+'</span><br />');
+       				   $('#result').append($('img#articleBigImage'));
+       				   $('.galleryImageHeight').find('iframe').appendTo('#result');
+       			 	   $(".articleTitle").remove();
+       			 	   $('.imageDesc').remove();
+       			 	   if($('#printableArea > div > p').length!=0){
+       			 	   		$('#printableArea > div > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+       			 	   else if($('#printableArea > p').length!=0){
+       			 	   		$('#printableArea > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+       			 	   	else {
+       			 	   		$('#printableArea > p').each(function () {
+       			 	   			$('#result').append('<p>'+(this).innerHTML+'</p>');
+       			 	   		});
+       			 	   	}
+					   $('#container').remove();
+					    $('#result').append("<span><a id='linksrc' href='http://rudaw.net/sorani/kurdistan/1807201334'> "+ kurdishsrc+": Rudaw</a></span>");
+        			  });
+        		
+             // var img = $('.img-dreje').attr('src');
+             
+      
+      
+              
+          </script>
+    <script>
+        $('#back').click(function(){
+                         history.go(-1);
+                         });
+        </script>
+</html>
 
-
-
+   
